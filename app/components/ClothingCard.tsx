@@ -3,6 +3,8 @@
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 import styles from './styles.module.scss'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 
 export const ClothingCard = ({ title, subtitle, products, className }: { title: string, subtitle: string, products: string[], className: string }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -32,13 +34,13 @@ export const ClothingCard = ({ title, subtitle, products, className }: { title: 
 
 
     return (
-        <div className= {`flex flex-col gap-4 justify-center rounded-2xl w-[30%]  p-7 px-12 ${className}`}>
+        <div className={`flex flex-col gap-4 justify-center rounded-2xl w-[30%]  p-7 px-12 ${className}`}>
             <div className='flex flex-col '>
                 <h3 className='text-black text-xl font-bold'>{title}</h3>
                 <p className='text-black '>{subtitle}</p>
             </div>
             <div>
-                <h2 className='text-8xl font-bold '>#1</h2>
+                <h2 className='text-8xl font-bold font-bebas '>#1</h2>
             </div>
 
             <div className={styles.carouselContainer}>
@@ -52,11 +54,11 @@ export const ClothingCard = ({ title, subtitle, products, className }: { title: 
                         objectFit="cover"
                     />
                 </div>
-                <button onClick={prevImage} className={styles.button} style={{left:'10px'}}>
-                    Prev
+                <button onClick={prevImage} className={styles.button} style={{ left: '10px' }}>
+                    <FontAwesomeIcon icon={faChevronLeft} color="black" size='2x' className="text-sm   " />
                 </button>
-                <button onClick={nextImage} className={styles.button} style={{right:'10px'}}>
-                    Next
+                <button onClick={nextImage} className={styles.button} style={{ right: '10px' }}>
+                    <FontAwesomeIcon icon={faChevronRight} color="black" className="text-sm h-8  " />
                 </button>
             </div>
 

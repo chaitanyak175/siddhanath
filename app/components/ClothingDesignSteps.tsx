@@ -10,7 +10,7 @@ const ClothingDesignSteps=()=> {
     ]
 
     return (
-        <div className='h-[150vh] px-24 py-20 flex flex-col gap-15 bg-[#FBF0F1]  bg-[radial-gradient(circle_at_90%_90%,rgba(255,255,255,1)_0%,rgba(255,255,255,1)_30%,rgba(245,240,240,1)_31%,rgba(245,240,240,1)_60%,rgba(251,240,241,1)_61%)]'>
+        <div className='h-[150vh] px-24 py-20 flex flex-col font-gilroy gap-15 bg-[#FBF0F1]  bg-[radial-gradient(circle_at_90%_90%,rgba(255,255,255,1)_0%,rgba(255,255,255,1)_30%,rgba(245,240,240,1)_31%,rgba(245,240,240,1)_60%,rgba(251,240,241,1)_61%)]'>
             <div className='flex flex-col gap-4 text-black px-3'>
                 <p className="w-fit px-2  border border-black rounded-2xl" >See below products and choose one</p>
                <div className='text-4xl font-bold'>

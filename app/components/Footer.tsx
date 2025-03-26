@@ -12,7 +12,7 @@ import {
 
 const Footer = () => {
     return (
-        <div className="h-[100vh] w-[100vw]   py-14   px-22 flex flex-col justify-between bg-black ">
+        <div className="h-[100vh] w-[100vw] py-14 px-22 flex flex-col justify-between bg-black font-gilroy ">
             <div className="  flex flex-row justify-between">
                 <div className="flex flex-col justify-between gap-7 ">
                     <div className=" flex flex-col gap-4 p-2  ">
@@ -35,7 +35,7 @@ const Footer = () => {
                             <div className=" w-2 h-2 inline-block rounded-[50%] bg-amber-400"></div>
                             <p className="text-[#4f4c4c] text-[10px]">OTHERS</p>
                         </div>
-                        <div className="flex flex-col gap-2 text-sm  text-[#c8c8c8c5]">
+                        <div className="flex flex-col gap-2 text-sm text-[#c8c8c8c5]">
                             <a href="" className="#7A7B76">
                                 Careers
                             </a>
@@ -68,18 +68,18 @@ const Footer = () => {
                             <div className="flex flex-col gap-2">
                                 <div className="flex flex-row justify-end gap-3">
                                     <div className=" flex justify-center items-center rounded-full w-10 h-10 bg-[#d1d1c4]">
-                                        <FontAwesomeIcon icon={faFacebookSquare} color="black" className="text-sm h-8  "/>
+                                        <FontAwesomeIcon icon={faFacebookSquare} color="black" className="text-sm h-8  " />
                                     </div>
                                     <div className=" flex justify-center items-center rounded-full w-10 h-10 bg-[#d1d1c4]">
                                         <FontAwesomeIcon icon={faXTwitter} color="black" className="text-sm h-8" />
                                     </div>
                                     <div className=" flex justify-center items-center rounded-full w-10 h-10 bg-[#d1d1c4]">
-                                        <FontAwesomeIcon icon={faInstagram} color="black" className="text-sm h-7"/>
+                                        <FontAwesomeIcon icon={faInstagram} color="black" className="text-sm h-7" />
                                     </div>
                                 </div>
                                 <div className="flex flex-row justify-end gap-3">
                                     <div className=" flex justify-center items-center rounded-full w-10 h-10 bg-[#d1d1c4] border" >
-                                        <FontAwesomeIcon icon={faTelegramPlane} color="black" className="text-sm h-7"/>
+                                        <FontAwesomeIcon icon={faTelegramPlane} color="black" className="text-sm h-7" />
                                     </div>
 
                                     <div className=" flex justify-center items-center rounded-full w-10 h-10 bg-[#d1d1c4] border ">

@@ -4,6 +4,9 @@ import AboutUs from "./components/AboutUs";
 
 import Footer from './components/Footer'
 import ClothingDesignSteps from "./components/ClothingDesignSteps";
+import DesignProcess  from "./components/DesignProcess";
+import { ProcessComponent } from "./components/ProcessComponent";
+
 
 export default function Home() {
     return (
@@ -12,6 +15,8 @@ export default function Home() {
             <div className="bg-white">
             <AboutUs />
             <ClothingDesignSteps/>
+            {/* <DesignProcess/> */}
+            <ProcessComponent/>
             <Footer />
             </div>
         </>
