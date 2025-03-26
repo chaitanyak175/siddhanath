@@ -16,6 +16,7 @@
     "@ionic/react": "^8.5.1",
     "framer-motion": "^12.6.0",
     "ionicons": "^7.4.0",
+    "lenis": "^1.2.3",
     "next": "15.2.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
