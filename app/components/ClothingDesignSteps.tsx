@@ -27,19 +27,19 @@ const ClothingDesignSteps = () => {
     ];
 
     return (
-        <div className="h-[135vh] px-24 py-20 flex flex-col font-gilroy gap-15 bg-[#FBF0F1] bg-[radial-gradient(circle_at_90%_90%,rgba(255,255,255,1)_0%,rgba(255,255,255,1)_30%,rgba(245,240,240,1)_31%,rgba(245,240,240,1)_60%,rgba(251,240,241,1)_61%)]">
+        <div className="px-0 w-full xl:h-[135vh] lg:px-24 xl:px-24 py-8 xl:py-20 flex flex-col font-gilroy gap-15 xl:gap-15 bg-[#FBF0F1] bg-[radial-gradient(circle_at_90%_90%,rgba(255,255,255,1)_0%,rgba(255,255,255,1)_30%,rgba(245,240,240,1)_31%,rgba(245,240,240,1)_60%,rgba(251,240,241,1)_61%)]">
             <div className="flex flex-col gap-4 text-black px-3">
-                <p className="w-fit px-2  border border-black rounded-2xl">
+                <p className="w-fit px-2 border border-black rounded-2xl mx-1">
                     Explore our premium corporate apparel solutions tailored to
                     your brand.
                 </p>
-                <div className="text-4xl font-bold mt-2">
+                <div className="text-4xl font-bold xl:mt-2 mx-2">
                     <h2>"How to Create Custom Apparel</h2>
                     <h2>for Your Business?"</h2>
                 </div>
             </div>
 
-            <div className="flex gap-5 justify-around items-center">
+            <div className="flex gap-16 xl:gap-5 justify-evenly xl:justify-around items-center flex-col xl:flex-row w-full">
                 <ClothingCard
                     title="Tshirts"
                     subtitle="Comfortable, stylish, and perfect for everyday wear. Choose from a variety of designs and fabrics."

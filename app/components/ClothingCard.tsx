@@ -63,16 +63,16 @@ export const ClothingCard = ({
 
     return (
         <div
-            className={`flex flex-col gap-4 justify-center rounded-2xl w-[30%] p-7 pb-10 px-12 ${className}`}
+            className={`flex flex-col gap-4 justify-center rounded-2xl w-[90%] pt-4  lg:w-[30%] xl:w-[30%] xl:p-7 pb-10 px-5  xl:px-12 ${className}`}
         >
             <div className="flex flex-col">
-                <h3 className="text-black text-3xl font-bold font-bebas">
+                <h3 className="text-black text-3xl font-bold font-bebas ">
                     {title}
                 </h3>
                 <p className="text-black mt-2">{subtitle}</p>
             </div>
             <div>
-                <h2 className="text-8xl font-bold font-bebas">{hashtag}</h2>
+                <h2 className="text-8xl font-bold font-bebas xl:text-7xl">{hashtag}</h2>
             </div>
 
             <div className={styles.carouselContainer}>
