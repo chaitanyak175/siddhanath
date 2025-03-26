@@ -24,8 +24,12 @@ export const ProcessCardComponent = ({
                 />
             </div>
             <div className="flex flex-col gap-3 justify-center w-1/2">
-                <h2 className="text-3xl font-extrabold">{title}</h2>
-                <p>{description}</p>
+                <h2 className="text-2xl font-bold font-bebas text-[#13013B]">
+                    {title}
+                </h2>
+                <p className="font-gilroy text-sm text-[#52466B]">
+                    {description}
+                </p>
             </div>
         </div>
     );

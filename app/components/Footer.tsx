@@ -18,11 +18,11 @@ const Footer = () => {
                     <div className=" flex flex-col gap-4 p-2  ">
                         <div className="flex gap-3 items-center ">
                             <div className=" w-2 h-2 inline-block rounded-[50%] bg-amber-400"></div>
-                            <p className="text-[#4f4c4c] text-[10px]">
+                            <p className="text-[#868282] text-[10px]">
                                 QUICK LINKS
                             </p>
                         </div>
-                        <div className="flex flex-col gap-[-2rem] text-[#cfd0cae4] text-[1.7rem] ">
+                        <div className="flex flex-col gap-[-2rem] text-[#f3ececd3] text-[1.7rem] ">
                             <a href="">Shop</a>
                             <a href="About  ">About Us</a>
                             <a href="About  ">Help Centre</a>
@@ -33,7 +33,7 @@ const Footer = () => {
                     <div className=" flex flex-col gap-4 p-2 ">
                         <div className="flex gap-2 items-center ">
                             <div className=" w-2 h-2 inline-block rounded-[50%] bg-amber-400"></div>
-                            <p className="text-[#4f4c4c] text-[10px]">OTHERS</p>
+                            <p className="text-[#868282] text-[10px]">OTHERS</p>
                         </div>
                         <div className="flex flex-col gap-2 text-sm text-[#c8c8c8c5]">
                             <a href="" className="#7A7B76">
@@ -55,7 +55,7 @@ const Footer = () => {
                             <div className="flex flex-col gap-4 ">
                                 <div className="flex gap-2 items-center ">
                                     <div className=" w-2 h-2 inline-block rounded-[50%] bg-amber-400"></div>
-                                    <p className="text-[#4f4c4c] text-[10px]">
+                                    <p className="text-[#868282] text-[10px]">
                                         CONTACT US
                                     </p>
                                 </div>
@@ -113,20 +113,22 @@ const Footer = () => {
                     <div className=" flex flex-col gap-4 p-2 ">
                         <div className="flex gap-2 items-center ">
                             <div className=" w-2 h-2 inline-block rounded-[50%] bg-amber-400"></div>
-                            <p className="text-[#4f4c4c] text-[10px]">
+                            <p className="text-[#868282] text-[10px]">
                                 LOCATION
                             </p>
                         </div>
                         <div className="flex flex-col gap-2">
-                            <p className="text-[#c8c8c8c5] text-sm">
-                                555 oveflow bridge ,Lokmanya Nagar,Pune 411041
+                            <p className="text-[#f3ececd3] text-sm">
+                                2nd Floor, Phoenix Building, at, Senapati Bapat
+                                Rd, above Dominos Pizza,
                             </p>
-                            <p className="text-2xl text-[#cfd0cae4]">
-                                10am-6pm
+                            <p className="text-[#f3ececd3] text-sm">
+                                Shivaji Co operative Housing Society,
+                                Bhageerath, Gokhalenagar, Pune, Maharashtra
+                                411016
                             </p>
-                            <p className="text-[#4f4c4c]    text-xs">
-                                /Everyday
-                            </p>
+                            <p className="text-2xl text-[#868282]">10am-6pm</p>
+                            <p className="text-[#868282] text-xs">/Everyday</p>
                         </div>
                     </div>
                 </div>
