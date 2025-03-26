@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
     "@fortawesome/free-brands-svg-icons": "^6.7.2",
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
@@ -19,6 +20,10 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "sass": "^1.86.0"
+
+    "framer-motion": "^12.5.0",
+
+
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
