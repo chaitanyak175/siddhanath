@@ -17,7 +17,7 @@ const AboutUs = () => {
                         fill
                         className="w-full h-full object-cover absolute"
                     />{" "}
-                    <div className="fixed sm:flex top-0 mt-60 flex-col hidden">
+                    <div className="absolute sm:flex top-0 mt-60 flex-col hidden">
                         <div className="text-white text-6xl font-gilroy">
                             All-in-1
                         </div>
