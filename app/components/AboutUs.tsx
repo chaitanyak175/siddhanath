@@ -24,17 +24,17 @@ const AboutUs = () => {
                         <div className="">
                             <AnimatedText
                                 examples={[
-                                    "planner",
+                                    "designer",
                                     "manufacturer",
-                                    "exporter",
+                                    "supplier",
                                 ]}
                             />
                         </div>
                         <div className="text-white text-6xl font-gilroy mb-2">
-                            for your clothing
+                            of premium apparel
                         </div>
                         <div className="text-white text-6xl font-gilroy">
-                            brand
+                            and corporate uniforms.
                         </div>
                     </div>
                     <div className="relative flex sm:flex-row flex-col-reverse items-start sm:items-end gap-3 xl:gap-0 sm:justify-between w-full bottom-0 h-full">
@@ -42,12 +42,14 @@ const AboutUs = () => {
                             Explore
                         </button>
                         <div className="flex flex-col">
-                            <h1 className="font-bold text-4xl leading-none text-white font-bebas">
-                                Clothes for you business.
+                            <h1 className="font-bold text-4xl leading-none text-white font-bebas mb-2">
+                                Apparel that defines your brand
                             </h1>
                             <p className="text-white text-lg font-gilroy">
-                                This is an example of a clothing website that I
-                                am making.
+                                Premium-quality clothing tailored for
+                            </p>
+                            <p className="text-white text-lg font-gilroy">
+                                businesses, brands, and professionals.
                             </p>
                         </div>
                     </div>

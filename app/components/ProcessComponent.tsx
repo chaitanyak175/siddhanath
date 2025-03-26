@@ -1,7 +1,8 @@
-import React from 'react'
-import { ProcessCardComponent } from './ProcessCardComponent'
+import React from "react";
+import { ProcessCardComponent } from "./ProcessCardComponent";
 
 export const ProcessComponent = () => {
+
   return (
     <div className='flex flex-row justify-around p-10 gap-8 text-black font-gilroy'> 
         <div className='w-1/3 flex flex-col gap-6' >
@@ -23,7 +24,7 @@ export const ProcessComponent = () => {
             <div className='border border-red-400 w-[80%]'></div>
             <ProcessCardComponent title={"Review."} description={'Track every stores progress and easily give feedback and approval.'} imageUrl={'/images/2.jpg'}  className=''/>
 
+
         </div>
-    </div>
-  )
-}
+    );
+};

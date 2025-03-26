@@ -1,25 +1,49 @@
+"use client";
+
 import Image from "next/image";
 import Header from "./components/Header";
 import AboutUs from "./components/AboutUs";
 
-import Footer from './components/Footer'
+import Footer from "./components/Footer";
 import ClothingDesignSteps from "./components/ClothingDesignSteps";
-import DesignProcess  from "./components/DesignProcess";
+import DesignProcess from "./components/DesignProcess";
 import { ProcessComponent } from "./components/ProcessComponent";
-
+import { useEffect } from "react";
+import Lenis from "lenis";
 
 export default function Home() {
-    return (
+    useEffect(() => {
+        const lenis = new Lenis({
+            duration: 1.5, // Adjust duration for the easing effect
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+        });
 
+        lenis.on("scroll", (e) => {
+            console.log(e);
+        });
+
+        function raf(time: number) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+
+        const animationId = requestAnimationFrame(raf);
+
+        // Cleanup function
+        return () => {
+            lenis.destroy();
+            cancelAnimationFrame(animationId);
+        };
+    }, []);
+    return (
         <>
             <div className="bg-white">
-            <AboutUs />
-            <ClothingDesignSteps/>
-            {/* <DesignProcess/> */}
-            <ProcessComponent/>
-            <Footer />
+                <AboutUs />
+                <ClothingDesignSteps />
+                {/* <DesignProcess/> */}
+                <ProcessComponent />
+                <Footer />
             </div>
         </>
-
     );
 }

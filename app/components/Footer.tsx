@@ -7,12 +7,12 @@ import {
     faTelegram,
     faFacebookF,
     faFacebookSquare,
-    faTelegramPlane
-} from '@fortawesome/free-brands-svg-icons';
+    faTelegramPlane,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
     return (
-        <div className="h-[100vh] w-[100vw] py-14 px-22 flex flex-col justify-between bg-black font-gilroy ">
+        <div className="h-screen w-[100vw] py-14 px-22 flex flex-col justify-between bg-black font-gilroy ">
             <div className="  flex flex-row justify-between">
                 <div className="flex flex-col justify-between gap-7 ">
                     <div className=" flex flex-col gap-4 p-2  ">
@@ -68,22 +68,42 @@ const Footer = () => {
                             <div className="flex flex-col gap-2">
                                 <div className="flex flex-row justify-end gap-3">
                                     <div className=" flex justify-center items-center rounded-full w-10 h-10 bg-[#d1d1c4]">
-                                        <FontAwesomeIcon icon={faFacebookSquare} color="black" className="text-sm h-8  " />
+                                        <FontAwesomeIcon
+                                            icon={faFacebookSquare}
+                                            color="black"
+                                            className="text-sm h-8  "
+                                        />
                                     </div>
                                     <div className=" flex justify-center items-center rounded-full w-10 h-10 bg-[#d1d1c4]">
-                                        <FontAwesomeIcon icon={faXTwitter} color="black" className="text-sm h-8" />
+                                        <FontAwesomeIcon
+                                            icon={faXTwitter}
+                                            color="black"
+                                            className="text-sm h-8"
+                                        />
                                     </div>
                                     <div className=" flex justify-center items-center rounded-full w-10 h-10 bg-[#d1d1c4]">
-                                        <FontAwesomeIcon icon={faInstagram} color="black" className="text-sm h-7" />
+                                        <FontAwesomeIcon
+                                            icon={faInstagram}
+                                            color="black"
+                                            className="text-sm h-7"
+                                        />
                                     </div>
                                 </div>
                                 <div className="flex flex-row justify-end gap-3">
-                                    <div className=" flex justify-center items-center rounded-full w-10 h-10 bg-[#d1d1c4] border" >
-                                        <FontAwesomeIcon icon={faTelegramPlane} color="black" className="text-sm h-7" />
+                                    <div className=" flex justify-center items-center rounded-full w-10 h-10 bg-[#d1d1c4] border">
+                                        <FontAwesomeIcon
+                                            icon={faTelegramPlane}
+                                            color="black"
+                                            className="text-sm h-7"
+                                        />
                                     </div>
 
                                     <div className=" flex justify-center items-center rounded-full w-10 h-10 bg-[#d1d1c4] border ">
-                                        <FontAwesomeIcon icon={faWhatsapp} color="black" className="text-sm h-7" />
+                                        <FontAwesomeIcon
+                                            icon={faWhatsapp}
+                                            color="black"
+                                            className="text-sm h-7"
+                                        />
                                     </div>
                                 </div>
                             </div>
