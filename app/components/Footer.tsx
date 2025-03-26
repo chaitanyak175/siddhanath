@@ -1,0 +1,126 @@
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+    faWhatsapp,
+    faXTwitter,
+    faInstagram,
+    faTelegram,
+    faFacebookF,
+    faFacebookSquare,
+    faTelegramPlane
+} from '@fortawesome/free-brands-svg-icons';
+
+const Footer = () => {
+    return (
+        <div className="h-[100vh] w-[100vw]   py-14   px-22 flex flex-col justify-between bg-black ">
+            <div className="  flex flex-row justify-between">
+                <div className="flex flex-col justify-between gap-7 ">
+                    <div className=" flex flex-col gap-4 p-2  ">
+                        <div className="flex gap-3 items-center ">
+                            <div className=" w-2 h-2 inline-block rounded-[50%] bg-amber-400"></div>
+                            <p className="text-[#4f4c4c] text-[10px]">
+                                QUICK LINKS
+                            </p>
+                        </div>
+                        <div className="flex flex-col gap-[-2rem] text-[#cfd0cae4] text-[1.7rem] ">
+                            <a href="">Shop</a>
+                            <a href="About  ">About Us</a>
+                            <a href="About  ">Help Centre</a>
+                            <a href="About  ">Partner With Us</a>
+                        </div>
+                    </div>
+
+                    <div className=" flex flex-col gap-4 p-2 ">
+                        <div className="flex gap-2 items-center ">
+                            <div className=" w-2 h-2 inline-block rounded-[50%] bg-amber-400"></div>
+                            <p className="text-[#4f4c4c] text-[10px]">OTHERS</p>
+                        </div>
+                        <div className="flex flex-col gap-2 text-sm  text-[#c8c8c8c5]">
+                            <a href="" className="#7A7B76">
+                                Careers
+                            </a>
+                            <a href="" className="#7A7B76">
+                                Returns And Exchange
+                            </a>
+                            <a href="" className="#7A7B76">
+                                Contacts
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div className="flex flex-col justify-between w-4/7 ">
+                    <div className=" flex flex-col gap-15 p-2 ">
+                        <div className="flex gap-2 items-center w-full h-2 bg-[#CFD0CA]"></div>
+                        <div className="flex flex-row justify-between ">
+                            <div className="flex flex-col gap-4 ">
+                                <div className="flex gap-2 items-center ">
+                                    <div className=" w-2 h-2 inline-block rounded-[50%] bg-amber-400"></div>
+                                    <p className="text-[#4f4c4c] text-[10px]">
+                                        CONTACT US
+                                    </p>
+                                </div>
+                                <div className="flex flex-col gap-2 text-sm text-[#c8c8c8c5] ">
+                                    <a href="">+91 9552134094</a>
+                                    <a href="">test@gangaprasad.com</a>
+                                </div>
+                            </div>
+
+                            <div className="flex flex-col gap-2">
+                                <div className="flex flex-row justify-end gap-3">
+                                    <div className=" flex justify-center items-center rounded-full w-10 h-10 bg-[#d1d1c4]">
+                                        <FontAwesomeIcon icon={faFacebookSquare} color="black" className="text-sm h-8  "/>
+                                    </div>
+                                    <div className=" flex justify-center items-center rounded-full w-10 h-10 bg-[#d1d1c4]">
+                                        <FontAwesomeIcon icon={faXTwitter} color="black" className="text-sm h-8" />
+                                    </div>
+                                    <div className=" flex justify-center items-center rounded-full w-10 h-10 bg-[#d1d1c4]">
+                                        <FontAwesomeIcon icon={faInstagram} color="black" className="text-sm h-7"/>
+                                    </div>
+                                </div>
+                                <div className="flex flex-row justify-end gap-3">
+                                    <div className=" flex justify-center items-center rounded-full w-10 h-10 bg-[#d1d1c4] border" >
+                                        <FontAwesomeIcon icon={faTelegramPlane} color="black" className="text-sm h-7"/>
+                                    </div>
+
+                                    <div className=" flex justify-center items-center rounded-full w-10 h-10 bg-[#d1d1c4] border ">
+                                        <FontAwesomeIcon icon={faWhatsapp} color="black" className="text-sm h-7" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className=" flex flex-col gap-4 p-2 ">
+                        <div className="flex gap-2 items-center ">
+                            <div className=" w-2 h-2 inline-block rounded-[50%] bg-amber-400"></div>
+                            <p className="text-[#4f4c4c] text-[10px]">
+                                LOCATION
+                            </p>
+                        </div>
+                        <div className="flex flex-col gap-2">
+                            <p className="text-[#c8c8c8c5] text-sm">
+                                555 oveflow bridge ,Lokmanya Nagar,Pune 411041
+                            </p>
+                            <p className="text-2xl text-[#cfd0cae4]">
+                                10am-6pm
+                            </p>
+                            <p className="text-[#4f4c4c]    text-xs">
+                                /Everyday
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="flex flex-row justify-between items-center p-2 px-4 text-[#2C2C2C]">
+                <p className="text-xs text-[#4f4c4c]">2024-Copyright</p>
+                <div className="flex flex-row justify-between w-4/7 ">
+                    <p className="text-xs text-[#4f4c4c]">Privacy</p>
+                    <p className="text-xs text-[#4f4c4c]">Eng</p>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default Footer;
