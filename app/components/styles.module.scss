@@ -70,6 +70,12 @@
         max-height: 35px;
     }
 
+    .productImage {
+        border-radius: 8px;
+        width: 50vw;
+        height:50vh;
+    }
+
 }
 
 /* Small Mobile adjustments */
@@ -111,9 +117,33 @@
     }
 }
 
+@media (min-width: 1600px)  {
+    .carouselContainer {
+        width: 100%;
+        max-width: 1900px;
+        height: 50vh;
+        max-height: 600px;
+        padding:0px;
+    }
+
+    .button {
+        width: 2vw;
+        height: 2vw;
+        max-width: 55px;
+        max-height: 55px;
+    }
+
+    .productImage {
+        border-radius: 8px;
+        width: 50vw;
+        height:50vh;
+    }
+}
+
 /* 🔹 Medium Screens (Laptops, Small Desktops) */
 @media (max-width: 1024px) {
     .carouselContainer {
+        width: 100%;
         height: 45vh;
         max-height: 450px;
     }
