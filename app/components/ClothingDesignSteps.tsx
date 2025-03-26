@@ -1,5 +1,6 @@
 import React from "react";
 import { ClothingCard } from "./ClothingCard";
+import styles from './styles.module.scss'
 // import ClothingCard from './ClothingCard'
 
 const ClothingDesignSteps = () => {
@@ -27,7 +28,7 @@ const ClothingDesignSteps = () => {
     ];
 
     return (
-        <div className="px-0 w-full xl:h-[135vh] lg:px-24 xl:px-24 py-8 xl:py-20 flex flex-col font-gilroy gap-15 xl:gap-15 bg-[#FBF0F1] bg-[radial-gradient(circle_at_90%_90%,rgba(255,255,255,1)_0%,rgba(255,255,255,1)_30%,rgba(245,240,240,1)_31%,rgba(245,240,240,1)_60%,rgba(251,240,241,1)_61%)]">
+        <div className={`px-0 w-full xl:h-[135vh] lg:px-24 xl:px-24 py-8 xl:py-20 flex flex-col font-gilroy gap-15 xl:gap-15 bg-[#FBF0F1] bg-[radial-gradient(circle_at_90%_90%,rgba(255,255,255,1)_0%,rgba(255,255,255,1)_30%,rgba(245,240,240,1)_31%,rgba(245,240,240,1)_60%,rgba(251,240,241,1)_61%)] ${styles.clothingContainer}`}>
             <div className="flex flex-col gap-4 text-black px-3">
                 <p className="w-fit px-2 border border-black rounded-2xl mx-1">
                     Explore our premium corporate apparel solutions tailored to
