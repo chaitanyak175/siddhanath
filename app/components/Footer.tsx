@@ -12,7 +12,7 @@ import {
 
 const Footer = () => {
     return (
-        <div className="h-auto sm:h-screen w-[100vw] py-14 px-3  justify-center sm:px-22 flex flex-col sm:justify-between bg-black font-gilroy   ">
+        <div className="h-auto  w-[100vw]   py-14 px-3  justify-center sm:px-22 flex flex-col sm:justify-between bg-black font-gilroy  gap-12  2xl:gap-6  2xl:h-screen ">
             <div className="flex flex-col sm:flex-row justify-between w-full">
                 <div className="flex flex-col justify-between gap-7 ">
                     <div className=" flex flex-col gap-4 p-2  ">
@@ -136,10 +136,14 @@ const Footer = () => {
 
             <div className="flex flex-row justify-between items-center p-2 sm:px-4 text-[#2C2C2C] ">
                 <p className="text-xs text-[#4f4c4c] ">2024-Copyright</p>
-                <div className="flex flex-row  sm:justify-between w-2/3 sm:w-4/7  ">
+                <div className="flex flex-row justify-around sm:justify-between w-2/3 sm:w-4/7  ">
                     <p className="text-xs text-[#4f4c4c]">Privacy</p>
                     <p className="text-xs text-[#4f4c4c]">Eng</p>
                 </div>
+            </div>
+
+            <div className="flex justify-center items-center text-6xl sm:text-[12rem] text-center font-bebas">
+                SIDDHANATH TRENDZ
             </div>
         </div>
     );
