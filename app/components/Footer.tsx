@@ -12,7 +12,7 @@ import {
 
 const Footer = () => {
     return (
-        <div className="h-auto  w-[100vw]   py-14 px-3  justify-center sm:px-22 flex flex-col sm:justify-between bg-black font-gilroy  gap-12  2xl:gap-6  2xl:h-screen ">
+        <div className="h-auto w-[100vw] py-14 px-3 justify-center sm:px-22 flex flex-col sm:justify-between bg-black font-gilroy  gap-12 2xl:gap-6 xl:h-screen 2xl:h-screen overflow-hidden">
             <div className="flex flex-col sm:flex-row justify-between w-full">
                 <div className="flex flex-col justify-between gap-7 ">
                     <div className=" flex flex-col gap-4 p-2  ">
