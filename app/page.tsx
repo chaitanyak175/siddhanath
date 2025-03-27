@@ -44,11 +44,11 @@ export default function Home() {
                 <ClothingDesignSteps />
                 {/* <DesignProcess/> */}
                 <ProcessComponent />
-<<<<<<< HEAD
+
                 <AboutUs />
-=======
+
                 <TestimonialCarousel />
->>>>>>> 66c0ebefd73def039e392097c780cda008769fad
+
                 <Footer />
             </div>
         </>
