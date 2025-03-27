@@ -3,11 +3,14 @@ import { ProcessCardComponent } from "./ProcessCardComponent";
 
 export const ProcessComponent = () => {
     return (
-        <div className="relative flex flex-col sm:flex-row justify-around p-10 gap-15 sm:gap-80 text-black font-gilroy bg-[#FFFBF6] ">
+        <div className="relative flex flex-col sm:flex-row justify-around p-10 gap-15 sm:gap-20 text-black font-gilroy bg-[#FFFBF6] ">
             {/* Sticky Left Section */}
             <div className="w-1/3 flex flex-col gap-6 sticky top-20 self-start h-fit">
-                <h2 className="text-5xl font-bebas">OUR PROCESS <span className="hidden sm:inline-block">:</span></h2>
-                <h2 className="hidden sm:block sm:text-3xl ">
+                <h2 className="text-5xl sm:text-7xl font-bebas">
+                    OUR PROCESS{" "}
+                    <span className="hidden sm:inline-block">:</span>
+                </h2>
+                <h2 className="hidden sm:block sm:text-4xl ">
                     A complete apparel manufacturing solution for your brand.
                 </h2>
                 <p className="hidden sm:block">
