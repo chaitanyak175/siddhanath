@@ -3,7 +3,7 @@ import Image from "next/image";
 import { TextCard, Typewrite } from "./TextCard";
 import { AnimatedText } from "./AnimatedText";
 
-const AboutUs = () => {
+const Hero = () => {
     return (
         <div className="">
             <section
@@ -59,4 +59,4 @@ const AboutUs = () => {
     );
 };
 
-export default AboutUs;
+export default Hero;
