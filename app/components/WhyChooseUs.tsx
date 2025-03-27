@@ -14,23 +14,20 @@ const testimonials = [
     {
         id: 1,
         title: "Silvee.in transformed our business with their exceptional services!",
-        description: "John Doe is the hero of industry who makes clothes for every event in life from birth to death",
-
+        description:
+            "John Doe is the hero of industry who makes clothes for every event in life from birth to death",
     },
     {
         id: 2,
         title: "Silvee.in transformed our business with their exceptional services!",
-        description: "John Doe is the hero of industry who makes clothes for every event in life from birth to death",
-
-
-
+        description:
+            "John Doe is the hero of industry who makes clothes for every event in life from birth to death",
     },
     {
         id: 3,
         title: "Silvee.in transformed our business with their exceptional services!",
-        description: "John Doe is the hero of industry who makes clothes for every event in life from birth to death",
-
-
+        description:
+            "John Doe is the hero of industry who makes clothes for every event in life from birth to death",
     },
 ];
 
@@ -58,8 +55,10 @@ const TestimonialCarousel = () => {
     };
 
     return (
-        <div className="sm:w-screen sm:mb-20 mb-15 w-[90%] flex flex-col items-center sm:block" >
-            <h2 className="relative sm:mx-auto sm:p-6 sm:left-10 text-black sm:text-7xl text-4xl left-3 my-6 font-bebas">Why choose us?</h2>
+        <div className="sm:w-screen sm:mb-20 mb-15 w-[90%] flex flex-col items-center sm:block">
+            <h2 className="relative sm:mx-auto sm:p-6 sm:left-10 text-black sm:text-7xl text-4xl left-3 my-6 font-bebas">
+                Why choose us?
+            </h2>
             <motion.div
                 ref={containerRef}
                 className="relative left-5 sm:left-0 sm:mx-auto sm:p-6 bg-[#e9d7d9] shadow-lg rounded-2xl text-center h-[61vh] sm:mb-7 max-w-100vw sm:shadow-2xl"

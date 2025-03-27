@@ -9,9 +9,7 @@ import Lenis from "lenis";
 import Hero from "./components/Hero";
 import AboutUs from "./components/AboutUs";
 
-
 import TestimonialCarousel from "./components/WhyChooseUs";
-
 
 export default function Home() {
     useEffect(() => {
@@ -43,9 +41,8 @@ export default function Home() {
                 <Hero />
                 <ClothingDesignSteps />
                 {/* <DesignProcess/> */}
-                <ProcessComponent />
-
                 <AboutUs />
+                <ProcessComponent />
 
                 <TestimonialCarousel />
 

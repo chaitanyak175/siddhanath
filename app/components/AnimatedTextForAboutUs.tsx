@@ -1,10 +1,10 @@
-import React from 'react'
+import React from "react";
 
 import { useRef } from "react";
 import styles from "./styles.module.scss";
 import { motion, useInView } from "framer-motion";
 
-export const AnimatedTextForAboutUs = ({ text }: { text:string[] }) => {
+export const AnimatedTextForAboutUs = ({ text }: { text: string[] }) => {
     const body = useRef(null);
     const isInView = useInView(body, {
         once: true,
@@ -17,7 +17,6 @@ export const AnimatedTextForAboutUs = ({ text }: { text:string[] }) => {
                 return (
                     <div key={index} className={styles.lineMask}>
                         <motion.p
-                           
                             initial={{ y: "100%" }}
                             animate={isInView ? { y: "0%" } : { y: "100%" }}
                             transition={{
@@ -25,13 +24,13 @@ export const AnimatedTextForAboutUs = ({ text }: { text:string[] }) => {
                                 ease: [0.33, 1, 0.68, 1],
                                 delay: 0.075 * index,
                             }}
-                            className='text-sm sm:text-xl '
+                            className="text-sm sm:text-2xl font-gilroy font-bold"
                         >
                             {phrase}
                         </motion.p>
                     </div>
                 );
             })}
-        </div> 
+        </div>
     );
-}
+};
