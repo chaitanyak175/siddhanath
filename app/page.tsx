@@ -10,6 +10,7 @@ import DesignProcess from "./components/DesignProcess";
 import { ProcessComponent } from "./components/ProcessComponent";
 import { useEffect } from "react";
 import Lenis from "lenis";
+import TestimonialCarousel from "./components/WhyChooseUs";
 
 export default function Home() {
     useEffect(() => {
@@ -42,6 +43,7 @@ export default function Home() {
                 <ClothingDesignSteps />
                 {/* <DesignProcess/> */}
                 <ProcessComponent />
+                <TestimonialCarousel />
                 <Footer />
             </div>
         </>
