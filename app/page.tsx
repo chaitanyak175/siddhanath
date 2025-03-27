@@ -1,16 +1,17 @@
 "use client";
 
-import Image from "next/image";
-import Header from "./components/Header";
-import AboutUs from "./components/AboutUs";
-
 import Footer from "./components/Footer";
 import ClothingDesignSteps from "./components/ClothingDesignSteps";
-import DesignProcess from "./components/DesignProcess";
 import { ProcessComponent } from "./components/ProcessComponent";
 import { useEffect } from "react";
 import Lenis from "lenis";
+
+import Hero from "./components/Hero";
+import AboutUs from "./components/AboutUs";
+
+
 import TestimonialCarousel from "./components/WhyChooseUs";
+
 
 export default function Home() {
     useEffect(() => {
@@ -39,11 +40,15 @@ export default function Home() {
     return (
         <>
             <div className="bg-white">
-                <AboutUs />
+                <Hero />
                 <ClothingDesignSteps />
                 {/* <DesignProcess/> */}
                 <ProcessComponent />
+<<<<<<< HEAD
+                <AboutUs />
+=======
                 <TestimonialCarousel />
+>>>>>>> 66c0ebefd73def039e392097c780cda008769fad
                 <Footer />
             </div>
         </>

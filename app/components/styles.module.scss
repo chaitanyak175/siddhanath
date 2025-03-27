@@ -76,6 +76,18 @@
         height:50vh;
     }
 
+    .lineMask {
+        overflow: hidden; /* This is critical - move from p to the container */
+        width:100%;
+    
+        p {
+            margin: 0px;
+            font-weight: 400;
+    
+            display: block; /* Ensure the paragraph takes up the full width */
+        }
+    }
+
 }
 
 /* Small Mobile adjustments */
@@ -163,5 +175,37 @@
         border-radius: 8px;
         width: 44vw;
         height:44vh;
+    }
+
+    .lineMask {
+        overflow: hidden; /* This is critical - move from p to the container */
+        width:70%;
+    
+        p {
+            margin: 0px;
+            font-weight: 400;
+    
+            display: block; /* Ensure the paragraph takes up the full width */
+        }
+    }
+}
+
+
+
+
+.textbody {
+    font-size: 5vw;
+
+}
+
+.lineMask {
+    overflow: hidden; /* This is critical - move from p to the container */
+    width:70%;
+
+    p {
+        margin: 0px;
+        font-weight: 400;
+
+        display: block; /* Ensure the paragraph takes up the full width */
     }
 }
