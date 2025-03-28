@@ -24,7 +24,7 @@ export const AnimatedTextForAboutUs = ({ text }: { text: string[] }) => {
                                 ease: [0.33, 1, 0.68, 1],
                                 delay: 0.075 * index,
                             }}
-                            className="text-sm sm:text-2xl font-gilroy font-bold"
+                            className="text-base sm:text-3xl font-gilroy font-bold sm:font-bold"
                         >
                             {phrase}
                         </motion.p>
