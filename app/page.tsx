@@ -40,9 +40,9 @@ export default function Home() {
         <>
             <div className="bg-white">
                 <Hero />
-                {/* <ClothingDesignSteps /> */}
+                <ClothingDesignSteps />
                 {/* <DesignProcess/> */}
-                <AboutUs />
+                {/* <AboutUs /> */}
                 <MorqueSection />
                 <ProcessComponent />
 
