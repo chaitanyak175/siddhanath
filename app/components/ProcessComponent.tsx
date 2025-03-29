@@ -7,7 +7,7 @@ export const ProcessComponent = () => {
         <div className="relative flex flex-col sm:flex-row justify-around p-10 gap-15 sm:gap-20 text-black font-gilroy bg-[#FFFBF6] w-screen">
             {/* Sticky Left Section */}
             <div
-                className={`w-1/3 flex flex-col gap-6 sm:sticky relative top-20 self-start h-fit ${styles.ourprocesstext}`}
+                className={`w-1/3 flex flex-col gap-6 sm:sticky relative top-10 sm:top-20 self-start h-fit ${styles.ourprocesstext}`}
             >
                 <h2 className="text-5xl sm:text-7xl font-bebas">
                     OUR PROCESS{" "}
