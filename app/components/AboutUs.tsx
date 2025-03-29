@@ -31,11 +31,11 @@ const AboutUs = () => {
                     className="w-full h-full object-cover absolute"
                 /> */}
             </div>
-            <div className="absolute top-10 left-5 w-full flex flex-col gap-9 ">
+            <div className="absolute top-10 left-0 sm:left-5 w-full flex flex-col gap-9 ">
                 <div className="relative w-full left-15 flex flex-col gap-3">
                     <motion.h1 className="text-7xl sm:text-8xl font-bebas text-black">
                         ABOUT US{" "}
-                        <span className="inline-block  text-7xl sm:text-9xl">
+                        <span className="hidden sm:inline-block  text-7xl sm:text-9xl  ">
                             :
                         </span>
                     </motion.h1>
