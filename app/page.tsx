@@ -10,6 +10,7 @@ import Hero from "./components/Hero";
 import AboutUs from "./components/AboutUs";
 
 import TestimonialCarousel from "./components/WhyChooseUs";
+import MorqueSection from "./components/MorqueSection";
 
 export default function Home() {
     useEffect(() => {
@@ -42,6 +43,7 @@ export default function Home() {
                 <ClothingDesignSteps />
                 {/* <DesignProcess/> */}
                 <AboutUs />
+                <MorqueSection/>
                 <ProcessComponent />
 
                 <TestimonialCarousel />
