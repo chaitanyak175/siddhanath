@@ -50,18 +50,18 @@ const AboutUs = () => {
                     <div className="w-1/6 flex flex-col items-center justify-start gap-4 text-black " >
                         <Image src={'/images/aboutimages/vision.png'} height={200} width={200} alt="logo" />
                         <h2 className="text-2xl">Vision</h2>
-                        <p className="text-center font-extrabold text-xl font-gilroy">To gain worldwide recognition as a trusted supplier of knitted garments for men, ensuring value for all stakeholders.</p>
+                        <p className={`text-center font-extrabold text-xl font-gilroy ${styles.valuestext}`}>To gain worldwide recognition as a trusted supplier of knitted garments for men, ensuring value for all stakeholders.</p>
                     </div>
                     <div className="w-1/6 flex flex-col items-center justify-start gap-4  text-black" >
                         <Image src={'/images/aboutimages/mission.png'} height={200} width={200} alt="logo" />
                         <h2 className="text-2xl">Mission</h2>
-                        <p className="text-center font-extrabold text-xl font-gilroy">
+                        <p className={`text-center font-extrabold text-xl font-gilroy ${styles.valuestext}`}>
                             To be a trusted manufacturer and exporter of high-quality products, consistently exceeding the expectations of our B2B customers.</p>
                     </div>
                     <div className="w-1/6 flex flex-col items-center justify-start gap-4 text-black" >
                         <Image src={'/images/aboutimages/values.png'} height={200} width={200} alt="logo" />
                         <h2 className="text-2xl ">Values</h2>
-                        <p className="text-center font-extrabold text-xl font-gilroy">Transparency | Ethics | Dedication | Creativity | Excellence | Social Responsibility</p>
+                        <p className={`text-center font-extrabold text-xl font-gilroy ${styles.valuestext}`}>Transparency | Ethics | Dedication | Creativity | Excellence | Social Responsibility</p>
                     </div>
 
                 </div>
