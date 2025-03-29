@@ -8,7 +8,7 @@ const Hero = () => {
         <div className="">
             <section
                 id="section"
-                className="h-screen py-6 sm:py-24 max-h-[1120px] sm:max-h-screen relative w-full justify-center flex items-center"
+                className="h-screen py-6 sm:py-24 max-h-[1120px] sm:max-h-screen relative w-screen justify-center flex items-center"
             >
                 <div id="container" className="w-full h-full sm:px-24 px-6">
                     <Image
