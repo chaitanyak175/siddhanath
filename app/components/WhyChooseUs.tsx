@@ -2,6 +2,7 @@
 
 import { useRef } from "react";
 import { useState } from "react";
+import styles from './styles.module.scss'
 import {
     motion,
     AnimatePresence,
@@ -56,7 +57,7 @@ const TestimonialCarousel = () => {
 
     return (
         <div className="sm:w-screen sm:mb-20 mb-15 w-[90%] flex flex-col items-center sm:block">
-            <h2 className="relative sm:mx-auto sm:p-6 sm:left-10 text-black sm:text-7xl text-4xl left-3 my-6 font-bebas">
+            <h2 className={`relative sm:mx-auto sm:p-6 sm:left-10 text-black sm:text-7xl text-4xl left-3 my-6 font-bebas ${styles.whychoosustitle}`}>
                 Why choose us?
             </h2>
             <motion.div
