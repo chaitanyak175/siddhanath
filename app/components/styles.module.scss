@@ -103,6 +103,19 @@
     }
 }
 
+
+@media (min-width: 1000px) and (max-width: 1240px){
+    .aboutuscontainer{
+        height:160vh ;
+    }
+    .aboutustext{
+        font-size:1.5rem;
+    }
+    .valuestext{
+        font-size: 1rem;
+    }
+}
+
 //big screens
 @media (min-width: 1240px) and (max-width: 1600px) {
     .carouselContainer {
@@ -124,6 +137,16 @@
         border-radius: 8px;
         width: 50vw;
         height: 50vh;
+    }
+
+    .aboutuscontainer{
+        height:150vh ;
+    }
+    .aboutustext{
+        font-size:1.5rem;
+    }
+    .valuestext{
+        font-size: 1.1rem;
     }
 }
 
@@ -204,3 +227,5 @@
         display: block; /* Ensure the paragraph takes up the full width */
     }
 }
+
+
