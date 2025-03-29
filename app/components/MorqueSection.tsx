@@ -2,6 +2,7 @@ import { useScroll, useTransform, motion, AnimatePresence } from 'framer-motion'
 import Image from 'next/image';
 import React, { useRef } from 'react';
 import Marquee from "react-fast-marquee";
+import styles from './styles.module.scss'
 
 const MorqueSection = () => {
     const client = [
@@ -25,7 +26,7 @@ const MorqueSection = () => {
 
     return (
         <div className="sm:w-screen sm:mb-20 mb-15 w-[90%] flex flex-col items-center sm:block">
-            <h2 className="relative sm:mx-auto sm:p-6 sm:left-10 text-black sm:text-7xl text-4xl left-3 my-6 font-bebas">
+            <h2 className={`relative sm:mx-auto sm:p-6 sm:left-10 text-black sm:text-7xl text-4xl left-3 my-6 font-bebas ${styles.ourclienttitle}`}>
                 OUR CLIENTS  <span className="hidden sm:inline-block">:</span>
             </h2>
             <motion.div
@@ -39,6 +40,7 @@ const MorqueSection = () => {
                 transition={{
                     duration: 1,
                     ease: "easeInOut",
+
                 }}
             >
                 <AnimatePresence mode="wait">
@@ -49,15 +51,15 @@ const MorqueSection = () => {
                         transition={{ duration: 0.5 }}
                         className="space-y-4 flex flex-col items-center"
                     >
-                        <Marquee className="w-full" speed={50} gradient={false} >
-                            {client.map((clt, index) => (
+                        <Marquee className="w-full" speed={50} gradient={false}  >
+                            {[...client, ...client].map((clt, index) => (
                                 <Image 
                                     key={index} 
                                     src={clt.imageUrl} 
                                     height={200} 
                                     width={200} 
                                     alt={`client image ${index}`} 
-                                    className="mx-4 rounded-2xl"
+                                    className={`mx-4 rounded-2xl ${styles.clientImage}`}
                                 />
                             ))}
                         </Marquee>

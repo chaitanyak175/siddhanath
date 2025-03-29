@@ -12,6 +12,11 @@
     src: url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 } */
 
+* {
+   
+    /* overflow-x: hidden; */
+}
+
 @font-face {
     font-family: Gilroy;
     font-style: normal;
