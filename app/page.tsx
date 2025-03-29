@@ -42,7 +42,7 @@ export default function Home() {
                 <Hero />
                 <ClothingDesignSteps />
                 {/* <DesignProcess/> */}
-                {/* <AboutUs /> */}
+                <AboutUs />
                 <MorqueSection />
                 <ProcessComponent />
 
