@@ -3,7 +3,7 @@ import Image from "next/image";
 import { AnimatedTextForAboutUs } from "./AnimatedTextForAboutUs";
 import { motion, useInView } from "framer-motion";
 // import AnimatedTextForAboutUs from "./components/AnimatedTextForAboutUs"
-import styles from './styles.module.scss'
+import styles from "./styles.module.scss";
 
 const AboutUs = () => {
     const body = useRef(null);
@@ -20,7 +20,9 @@ const AboutUs = () => {
     ];
 
     return (
-        <div className={`h-[95vh] 2xl:h-[125vh] w-screen relative ${styles.aboutuscontainer}`}>
+        <div
+            className={`h-[95vh] 2xl:h-[125vh] w-screen relative ${styles.aboutuscontainer} overflow-x-hidden`}
+        >
             <div className="w-full h-full sm:px-24 px-6 bg-[#E9E7E1]">
                 {/* <Image
                     src="/images/about2.jpg"
@@ -47,27 +49,55 @@ const AboutUs = () => {
                     <p>At SIddhanath Trendz Private Limited, we are a leading designer, manufacturer, and exporter of premium-quality apparel and corporate uniforms. With in-house design expertise and advanced production capabilities, we offer end-to-end solutions tailored for fashion brands, retail chains, hospitality, e-commerce, and corporate industries. From fabric sourcing to bulk production and strict quality checks, our commitment to craftsmanship, innovation, and durability ensures that every garment reflects professionalism and style. Partner with us for expertly crafted apparel solutions that elevate your brand.</p>
                 </div> */}
                 <div className="hidden w-full sm:flex flex-row font-gilroy justify-around my-5 ">
-                    <div className="w-1/6 flex flex-col items-center justify-start gap-4 text-black " >
-                        <Image src={'/images/aboutimages/vision.png'} height={200} width={200} alt="logo" />
+                    <div className="w-1/6 flex flex-col items-center justify-start gap-4 text-black ">
+                        <Image
+                            src={"/images/aboutimages/vision.png"}
+                            height={200}
+                            width={200}
+                            alt="logo"
+                        />
                         <h2 className="text-2xl">Vision</h2>
-                        <p className={`text-center font-extrabold text-xl font-gilroy ${styles.valuestext}`}>To gain worldwide recognition as a trusted supplier of knitted garments for men, ensuring value for all stakeholders.</p>
+                        <p
+                            className={`text-center font-extrabold text-xl font-gilroy ${styles.valuestext}`}
+                        >
+                            To gain worldwide recognition as a trusted supplier
+                            of knitted garments for men, ensuring value for all
+                            stakeholders.
+                        </p>
                     </div>
-                    <div className="w-1/6 flex flex-col items-center justify-start gap-4  text-black" >
-                        <Image src={'/images/aboutimages/mission.png'} height={200} width={200} alt="logo" />
+                    <div className="w-1/6 flex flex-col items-center justify-start gap-4  text-black">
+                        <Image
+                            src={"/images/aboutimages/mission.png"}
+                            height={200}
+                            width={200}
+                            alt="logo"
+                        />
                         <h2 className="text-2xl">Mission</h2>
-                        <p className={`text-center font-extrabold text-xl font-gilroy ${styles.valuestext}`}>
-                            To be a trusted manufacturer and exporter of high-quality products, consistently exceeding the expectations of our B2B customers.</p>
+                        <p
+                            className={`text-center font-extrabold text-xl font-gilroy ${styles.valuestext}`}
+                        >
+                            To be a trusted manufacturer and exporter of
+                            high-quality products, consistently exceeding the
+                            expectations of our B2B customers.
+                        </p>
                     </div>
-                    <div className="w-1/6 flex flex-col items-center justify-start gap-4 text-black" >
-                        <Image src={'/images/aboutimages/values.png'} height={200} width={200} alt="logo" />
+                    <div className="w-1/6 flex flex-col items-center justify-start gap-4 text-black">
+                        <Image
+                            src={"/images/aboutimages/values.png"}
+                            height={200}
+                            width={200}
+                            alt="logo"
+                        />
                         <h2 className="text-2xl ">Values</h2>
-                        <p className={`text-center font-extrabold text-xl font-gilroy ${styles.valuestext}`}>Transparency | Ethics | Dedication | Creativity | Excellence | Social Responsibility</p>
+                        <p
+                            className={`text-center font-extrabold text-xl font-gilroy ${styles.valuestext}`}
+                        >
+                            Transparency | Ethics | Dedication | Creativity |
+                            Excellence | Social Responsibility
+                        </p>
                     </div>
-
                 </div>
-
             </div>
-
         </div>
     );
 };
