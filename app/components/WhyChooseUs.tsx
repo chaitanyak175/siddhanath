@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 import { useState } from "react";
-import styles from './styles.module.scss'
+import styles from "./styles.module.scss";
 import {
     motion,
     AnimatePresence,
@@ -57,7 +57,9 @@ const TestimonialCarousel = () => {
 
     return (
         <div className="sm:w-screen sm:mb-20 mb-15 w-[90%] flex flex-col items-center sm:block">
-            <h2 className={`relative sm:mx-auto sm:p-6 sm:left-10 text-black sm:text-7xl text-4xl left-3 my-6 font-bebas ${styles.whychoosustitle}`}>
+            <h2
+                className={`relative sm:mx-auto sm:p-6 sm:left-10 text-black sm:text-7xl text-4xl left-3 my-6 font-bebas ${styles.whychoosustitle}`}
+            >
                 Why choose us?
             </h2>
             <motion.div
@@ -76,9 +78,9 @@ const TestimonialCarousel = () => {
                 <AnimatePresence mode="wait">
                     <motion.div
                         key={testimonials[currentIndex].id}
-                        initial={{ opacity: 0, x: 50, y: 100 }}
+                        initial={{ opacity: 0, x: 10, y: 100 }}
                         animate={{ opacity: 1, x: 0, y: 100 }}
-                        exit={{ opacity: 0, x: -50 }}
+                        exit={{ opacity: 0, x: -10 }}
                         transition={{ duration: 0.5 }}
                         className="space-y-4 flex flex-col items-center"
                     >
