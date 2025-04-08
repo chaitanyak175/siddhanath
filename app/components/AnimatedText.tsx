@@ -23,7 +23,7 @@ export const AnimatedText = ({ examples }: { examples: string[] }) => {
     }, []);
 
     return (
-        <p className="mb-3 text-sm font-light uppercase">
+        <p className="sm:mb-3 text-sm font-light uppercase">
             {/* <span className="inline-block size-2 bg-neutral-950" /> */}
             <span className="">
                 {" "}
@@ -41,7 +41,7 @@ export const AnimatedText = ({ examples }: { examples: string[] }) => {
                             ease: "easeInOut",
                         }}
                         key={`${exampleIndex}-${i}`}
-                        className="relative text-6xl font-bebas"
+                        className="relative text-4xl sm:text-6xl font-bebas"
                     >
                         <motion.span
                             initial={{

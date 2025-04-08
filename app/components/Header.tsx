@@ -10,12 +10,14 @@ const Header = () => {
         console.log("click");
         setShowMenu((prev) => !prev);
     };
+
     const headerData = [
-        "About",
-        "Industries",
         "Products",
-        "Process",
+        "About",
         "Clients",
+        "Process",
+        "Why Us",
+
         "Contact",
     ];
     return (
@@ -33,7 +35,7 @@ const Header = () => {
                         return (
                             <React.Fragment key={index}>
                                 <li className="text-base nav-hover-btn">
-                                    <Link href={item}>{item}</Link>
+                                    <Link href={`#${item}`}>{item}</Link>
                                 </li>
                             </React.Fragment>
                         );

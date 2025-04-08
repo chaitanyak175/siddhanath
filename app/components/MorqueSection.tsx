@@ -6,7 +6,7 @@ import styles from './styles.module.scss'
 
 const MorqueSection = () => {
     const client = [
-        { imageUrl: "/images/clients/2.png" },
+        { imageUrl: "/images/clients/2.jpg" },
         { imageUrl: "/images/clients/3.png" },
         { imageUrl: "/images/clients/4.png" },
         // { imageUrl: "/images/clients/5.png" },
@@ -14,6 +14,7 @@ const MorqueSection = () => {
         { imageUrl: "/images/clients/6.png" },
         { imageUrl: "/images/clients/7.png" },
         { imageUrl: "/images/clients/8.png" },
+        { imageUrl: "/images/clients/9.jpg" },
     ];
 
     const containerRef = useRef(null);

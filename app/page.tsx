@@ -39,16 +39,30 @@ export default function Home() {
     return (
         <>
             <div className="bg-white">
-                <Hero />
-                <ClothingDesignSteps />
+                <div id="home">
+                    <Hero />
+                </div>
+                <div id="Products">
+                    <ClothingDesignSteps />
+                </div>
                 {/* <DesignProcess/> */}
-                <AboutUs />
-                <MorqueSection />
-                <ProcessComponent />
+                <div id="About">
+                    <AboutUs />
+                </div>
+                <div id="Clients">
+                    <MorqueSection />
+                </div>
+                <div id="Process">
+                    <ProcessComponent />
+                </div>
 
-                <TestimonialCarousel />
+                <div id="Why Us">
+                    <TestimonialCarousel />
+                </div>
 
-                <Footer />
+                <div id="Contact">
+                    <Footer />
+                </div>
             </div>
         </>
     );
