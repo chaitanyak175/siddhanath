@@ -23,7 +23,7 @@ const AboutUs = () => {
         <div
             className={`h-[95vh] 2xl:h-[125vh] w-screen relative ${styles.aboutuscontainer} overflow-x-hidden`}
         >
-            <div className="w-full h-full sm:px-24 px-6 bg-[#E9E7E1]">
+            <div className="w-full h-full sm:px-24 px-6 bg-[#f8f7f4]">
                 {/* <Image
                     src="/images/about2.jpg"
                     alt="This is the Image of About us Section."
@@ -50,12 +50,15 @@ const AboutUs = () => {
                 </div> */}
                 <div className="hidden w-full sm:flex flex-row font-gilroy justify-around my-5 ">
                     <div className="w-1/6 flex flex-col items-center justify-start gap-4 text-black ">
+                    <div className="h-[200px] w-[200px]">
                         <Image
-                            src={"/images/aboutimages/vision.png"}
-                            height={200}
-                            width={200}
+                            src={"/images/svg/Vision.svg"}
+                            height={1000}
+                            width={1000}
                             alt="logo"
+                            className=''
                         />
+                        </div>
                         <h2 className="text-2xl">Vision</h2>
                         <p
                             className={`text-center font-extrabold text-xl font-gilroy ${styles.valuestext}`}
@@ -66,12 +69,14 @@ const AboutUs = () => {
                         </p>
                     </div>
                     <div className="w-1/6 flex flex-col items-center justify-start gap-4  text-black">
-                        <Image
-                            src={"/images/aboutimages/mission.png"}
-                            height={200}
-                            width={200}
-                            alt="logo"
-                        />
+                        <div className="h-[200px] w-[200px]">
+                            <Image
+                                src={"/images/svg/Mission.svg"}
+                                height={1000}
+                                width={1000}
+                                alt="logo"
+                            />
+                        </div>
                         <h2 className="text-2xl">Mission</h2>
                         <p
                             className={`text-center font-extrabold text-xl font-gilroy ${styles.valuestext}`}
@@ -82,12 +87,14 @@ const AboutUs = () => {
                         </p>
                     </div>
                     <div className="w-1/6 flex flex-col items-center justify-start gap-4 text-black">
-                        <Image
-                            src={"/images/aboutimages/values.png"}
-                            height={200}
-                            width={200}
-                            alt="logo"
-                        />
+                        <div className="h-[200px] w-[200px]">
+                            <Image
+                                src={"/images/svg/values.svg"}
+                                height={1000}
+                                width={1000}
+                                alt="logo"
+                            />
+                        </div>
                         <h2 className="text-2xl ">Values</h2>
                         <p
                             className={`text-center font-extrabold text-xl font-gilroy ${styles.valuestext}`}

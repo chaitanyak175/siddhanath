@@ -17,8 +17,8 @@ const Hero = () => {
                         fill
                         className="w-full h-full object-cover absolute"
                     />{" "}
-                    <div className="absolute sm:flex top-0 mt-60 flex-col hidden">
-                        <div className="text-white text-6xl font-gilroy">
+                    <div className="absolute sm:flex sm:top-0 mt-30 sm:mt-60 flex-col text-lg">
+                        <div className="text-white text-4xl  sm:text-6xl font-gilroy">
                             All-in-1
                         </div>
                         <div className="">
@@ -30,10 +30,10 @@ const Hero = () => {
                                 ]}
                             />
                         </div>
-                        <div className="text-white text-6xl font-gilroy mb-2">
+                        <div className="text-white text-4xl sm:text-6xl font-gilroy mb-2">
                             of premium apparel
                         </div>
-                        <div className="text-white text-6xl font-gilroy">
+                        <div className="text-white text-4xl sm:text-6xl font-gilroy">
                             and corporate uniforms.
                         </div>
                     </div>

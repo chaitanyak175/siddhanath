@@ -13,15 +13,16 @@ export const ProcessCardComponent = ({
     className: string;
 }) => {
     return (
-        <div className="flex flex-col  sm:flex-row gap-8 justify-start w-full sm:w-3/5 ">
-            <div className="flex justify-center items-center ">
-                <Image
-                    src={imageUrl}
-                    width={200}
-                    height={240}
-                    alt="process image"
-                    className="rounded-xl sm:w-[200px] w-full"
-                />
+        <div className={`flex flex-col sm:flex-row gap-8 justify-start w-full sm:w-3/5 ${className}`}>
+            <div className="flex justify-center items-center">
+                <div className="w-[270px] h-[160px] relative">
+                    <Image
+                        src={imageUrl}
+                        alt="process image"
+                        layout="fill"
+                        className="rounded-xl object-cover"
+                    />
+                </div>
             </div>
             <div className="flex flex-col gap-3 justify-center w-full sm:w-1/2">
                 <h2 className="text-2xl font-bold font-bebas text-[#13013B]">
