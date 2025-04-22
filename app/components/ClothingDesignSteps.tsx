@@ -5,26 +5,22 @@ import styles from "./styles.module.scss";
 
 const ClothingDesignSteps = () => {
     const shirts = [
-        "/images/shirts/shirt1.jpg",
-        "/images/shirts/shirt2.jpg",
-        "/images/shirts/shirt3.jpg",
-        "/images/shirts/shirt4.jpg",
-        "/images/shirts/shirt5.jpg",
+        "/images/shirts/shirt1.png",
+        "/images/shirts/shirt2.png",
+        "/images/shirts/shirt3.png",
+        "/images/shirts/shirt4.png",
+        "/images/shirts/shirt5.png",
     ];
     const tshirts = [
-        "/images/tshirts/tshirt1.jpg",
-        "/images/tshirts/tshirt2.jpg",
-        "/images/tshirts/tshirt3.jpg",
-        "/images/tshirts/tshirt4.jpg",
-        "/images/tshirts/tshirt5.jpg",
+        "/images/tshirts/tshirt1.png",
+        "/images/tshirts/tshirt2.png",
+        "/images/tshirts/tshirt3.png",
     ];
 
     const pants = [
-        "/images/pants/pant1.jpg",
-        "/images/pants/pant2.jpg",
-        "/images/pants/pant3.jpg",
-        "/images/pants/pant4.jpg",
-        "/images/pants/pant5.jpg",
+        "/images/pants/pant1.png",
+        "/images/pants/pant2.png",
+        "/images/pants/pant3.png",
     ];
 
     return (

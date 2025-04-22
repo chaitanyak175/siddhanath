@@ -11,6 +11,7 @@ import AboutUs from "./components/AboutUs";
 
 import TestimonialCarousel from "./components/WhyChooseUs";
 import MorqueSection from "./components/MorqueSection";
+import CorporateCollection from "./components/CorporateCollection";
 
 export default function Home() {
     useEffect(() => {
@@ -54,6 +55,10 @@ export default function Home() {
                 </div>
                 <div id="Process">
                     <ProcessComponent />
+                </div>
+
+                <div>
+                    <CorporateCollection />
                 </div>
 
                 <div id="Why Us">
