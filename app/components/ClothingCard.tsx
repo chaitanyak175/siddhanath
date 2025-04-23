@@ -72,17 +72,18 @@ export const ClothingCard = ({
                 <p className="text-black mt-2">{subtitle}</p>
             </div>
             <div>
-                <h2 className="text-8xl font-bold font-bebas xl:text-7xl">{hashtag}</h2>
+                <h2 className="text-8xl font-bold font-bebas xl:text-7xl">
+                    {hashtag}
+                </h2>
             </div>
 
             <div className={styles.carouselContainer}>
                 <div className={styles.imageContainer}>
                     <Image
-                        className={styles.productImage}
+                        className={`${styles.productImage} object-cover`}
                         src={products[currentIndex]}
                         alt={`Slide ${currentIndex}`}
-                        layout="fill"
-                        objectFit="cover"
+                        fill
                     />
                 </div>
 

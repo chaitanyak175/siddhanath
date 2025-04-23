@@ -53,6 +53,7 @@
 }
 
 .productImage {
+    object-fit: cover;
     border-radius: 8px;
 }
 
@@ -103,15 +104,14 @@
     }
 }
 
-
-@media (min-width: 1000px) and (max-width: 1240px){
-    .aboutuscontainer{
-        height:160vh ;
+@media (min-width: 1000px) and (max-width: 1240px) {
+    .aboutuscontainer {
+        height: 160vh;
     }
-    .aboutustext{
-        font-size:1.5rem;
+    .aboutustext {
+        font-size: 1.5rem;
     }
-    .valuestext{
+    .valuestext {
         font-size: 1rem;
     }
 }
@@ -139,17 +139,17 @@
         height: 50vh;
     }
 
-    .aboutuscontainer{
-        height:150vh ;
+    .aboutuscontainer {
+        height: 150vh;
     }
-    .aboutustext{
-        font-size:1.5rem;
+    .aboutustext {
+        font-size: 1.5rem;
     }
-    .valuestext{
+    .valuestext {
         font-size: 1.1rem;
     }
-    .ourprocesstext{
-        left:9vh;
+    .ourprocesstext {
+        left: 9vh;
     }
 }
 
@@ -177,15 +177,15 @@
     .clothingContainer {
         height: 115vh;
     }
-    .whychoosustitle{
-        left:6.5vh;
+    .whychoosustitle {
+        left: 6.5vh;
     }
-    .clientImage{
-        width:300 ;
+    .clientImage {
+        width: 300;
         height: 300;
     }
-    .ourclienttitle{
-        left:6.5vh;
+    .ourclienttitle {
+        left: 6.5vh;
     }
 }
 
@@ -240,5 +240,3 @@
         display: block; /* Ensure the paragraph takes up the full width */
     }
 }
-
-

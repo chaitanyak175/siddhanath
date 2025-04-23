@@ -3,19 +3,19 @@ import Image from "next/image";
 const uniforms = [
     {
         title: "School Uniforms",
-        image: "/images/pants/pant1.jpg",
+        image: "/images/pants/pant1.png",
     },
     {
         title: "Industrial Uniforms",
-        image: "/images/pants/pant2.jpg",
+        image: "/images/pants/pant2.png",
     },
     {
         title: "Sports Uniforms",
-        image: "/images/pants/pant3.jpg",
+        image: "/images/pants/pant3.png",
     },
     {
         title: "Hospital Uniforms",
-        image: "/images/pants/pant4.jpg",
+        image: "/images/pants/pant3.png",
     },
 ];
 
@@ -36,9 +36,8 @@ export default function CorporateCollection() {
                                 <Image
                                     src={item.image}
                                     alt={item.title}
-                                    layout="fill"
-                                    objectFit="contain"
-                                    className="rounded-xl"
+                                    fill
+                                    className="object-contain rounded-xl"
                                 />
                             </div>
                             <h3 className="text-lg font-semibold text-center text-black font-gilroy">
@@ -62,9 +61,8 @@ export default function CorporateCollection() {
                                 <Image
                                     src={item.image}
                                     alt={item.title}
-                                    layout="fill"
-                                    objectFit="contain"
-                                    className="rounded-xl"
+                                    fill
+                                    className="object-contain rounded-xl"
                                 />
                             </div>
                             <h3 className="text-lg font-semibold text-center text-black font-gilroy">
@@ -88,9 +86,8 @@ export default function CorporateCollection() {
                                 <Image
                                     src={item.image}
                                     alt={item.title}
-                                    layout="fill"
-                                    objectFit="contain"
-                                    className="rounded-xl"
+                                    fill
+                                    className="object-contain rounded-xl"
                                 />
                             </div>
                             <h3 className="text-lg font-semibold text-center text-black font-gilroy">
@@ -114,9 +111,8 @@ export default function CorporateCollection() {
                                 <Image
                                     src={item.image}
                                     alt={item.title}
-                                    layout="fill"
-                                    objectFit="contain"
-                                    className="rounded-xl"
+                                    fill
+                                    className="object-contain rounded-xl"
                                 />
                             </div>
                             <h3 className="text-lg font-semibold text-center text-black font-gilroy">
