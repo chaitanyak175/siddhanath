@@ -17,7 +17,6 @@ const Header = () => {
         "Clients",
         "Process",
         "Why Us",
-
         "Contact",
     ];
     return (

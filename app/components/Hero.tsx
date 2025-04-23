@@ -12,7 +12,7 @@ const Hero = () => {
             >
                 <div id="container" className="w-full h-full sm:px-24 px-6">
                     <Image
-                        src="/images/normal-people.jpg"
+                        src="/images/hero-section.png"
                         alt="Hero Background"
                         fill
                         className="w-full h-full object-cover absolute"
@@ -24,7 +24,7 @@ const Hero = () => {
                         <div className="">
                             <AnimatedText
                                 examples={[
-                                    "designer",
+                                    // "designer",
                                     "manufacturer",
                                     "supplier",
                                 ]}

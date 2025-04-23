@@ -13,10 +13,10 @@ const AboutUs = () => {
     });
 
     const text = [
-        "* At Siddhanath Trendz Private Limited, we are a leading designer, manufacturer, and exporter of premium-quality apparel and corporate uniforms.",
-        "* With in-house design expertise and advanced production capabilities, we offer end-to-end solutions tailored for fashion brands, retail chains, hospitality, e-commerce, and corporate industries.",
-        "* From fabric sourcing to bulk production and strict quality checks, our commitment to craftsmanship, innovation, and durability ensures that every garment reflects professionalism and style.",
-        "* Partner with us for expertly crafted apparel solutions that elevate your brand.",
+        "✔️ At Siddhanath Trendz Private Limited, we are a leading designer, manufacturer, and exporter of premium-quality apparel and corporate uniforms.",
+        "✔️ With in-house design expertise and advanced production capabilities, we offer end-to-end solutions tailored for fashion brands, retail chains, hospitality, e-commerce, and corporate industries.",
+        "✔️ From fabric sourcing to bulk production and strict quality checks, our commitment to craftsmanship, innovation, and durability ensures that every garment reflects professionalism and style.",
+        "✔️ Partner with us for expertly crafted apparel solutions that elevate your brand.",
     ];
 
     return (
@@ -50,14 +50,14 @@ const AboutUs = () => {
                 </div> */}
                 <div className="hidden w-full sm:flex flex-row font-gilroy justify-around my-5 ">
                     <div className="w-1/6 flex flex-col items-center justify-start gap-4 text-black ">
-                    <div className="h-[200px] w-[200px]">
-                        <Image
-                            src={"/images/svg/Vision.svg"}
-                            height={1000}
-                            width={1000}
-                            alt="logo"
-                            className=''
-                        />
+                        <div className="h-[200px] w-[200px]">
+                            <Image
+                                src={"/images/svg/Vision.svg"}
+                                height={1000}
+                                width={1000}
+                                alt="logo"
+                                className=""
+                            />
                         </div>
                         <h2 className="text-2xl">Vision</h2>
                         <p
