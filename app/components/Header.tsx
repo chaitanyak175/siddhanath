@@ -47,9 +47,14 @@ const Header = () => {
                     >
                         {showMenu ? "Close" : "Menu"}
                     </button>
-                    <button className="sm:block font-bebas hidden border-2 border-white rounded-full px-3 py-1 text-white hover:bg-white hover:text-black duration-300">
+                    <a
+                        href="https://wa.me/918855069509"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="sm:block font-bebas hidden border-2 border-white rounded-full px-3 py-1 text-white hover:bg-white hover:text-black duration-300"
+                    >
                         Contact Us
-                    </button>
+                    </a>
                 </div>
             </div>
         </header>
