@@ -4,51 +4,48 @@ import ProductCarousel from "./ProductCarousel";
 const uniforms = [
     {
         title: "School Uniforms",
-        image: "/images/pants/pant1.png",
+        image: "/images/categories/corporate/School-Uniforms.avif",
     },
     {
         title: "Industrial Uniforms",
-        image: "/images/pants/pant2.png",
+        image: "/images/categories/corporate/Industrial-Uniforms.jpg",
     },
     {
         title: "Sports Uniforms",
-        image: "/images/pants/pant3.png",
+        image: "/images/categories/corporate/Sports-Uniform.jpg",
     },
     {
         title: "Hospital Uniforms",
-        image: "/images/pants/pant3.png",
+        image: "/images/categories/corporate/Hospital-Uniform.jpg",
+    },
+    
+    {
+        title: "Industrial Uniforms",
+        image: "/images/categories/corporate/Industrial-Uniforms.jpg",
+    },
+    {
+        title: "Sports Uniforms",
+        image: "/images/categories/corporate/Sports-Uniform.jpg",
+    },
+    {
+        title: "Hospital Uniforms",
+        image: "/images/categories/corporate/Hospital-Uniform.jpg",
     },
     {
         title: "School Uniforms",
-        image: "/images/pants/pant1.png",
+        image: "/images/categories/corporate/School-Uniforms.avif",
     },
     {
         title: "Industrial Uniforms",
-        image: "/images/pants/pant2.png",
+        image: "/images/categories/corporate/Industrial-Uniforms.jpg",
     },
     {
         title: "Sports Uniforms",
-        image: "/images/pants/pant3.png",
+        image: "/images/categories/corporate/Sports-Uniform.jpg",
     },
     {
         title: "Hospital Uniforms",
-        image: "/images/pants/pant3.png",
-    },
-    {
-        title: "School Uniforms",
-        image: "/images/pants/pant1.png",
-    },
-    {
-        title: "Industrial Uniforms",
-        image: "/images/pants/pant2.png",
-    },
-    {
-        title: "Sports Uniforms",
-        image: "/images/pants/pant3.png",
-    },
-    {
-        title: "Hospital Uniforms",
-        image: "/images/pants/pant3.png",
+        image: "/images/categories/corporate/Hospital-Uniform.jpg",
     },
 ];
 
