@@ -21,14 +21,14 @@ const Footer = () => {
                             </p>
                         </div>
                         <div className="flex flex-col gap-[-2rem] text-[#f3ececd3] text-[1.7rem] ">
-                            <a href="">Shop</a>
-                            <a href="About  ">About Us</a>
-                            <a href="About  ">Help Centre</a>
-                            <a href="About  ">Partner With Us</a>
+                            <a href="">Home</a>
+                            <a href="#Products">Our Products</a>
+                            <a href="About">About</a>
+                            <a href="Cients">Clients</a>
                         </div>
                     </div>
 
-                    <div className="  hidden sm:flex flex-col gap-4 p-2  ">
+                    {/* <div className="  hidden sm:flex flex-col gap-4 p-2  ">
                         <div className="flex gap-2 items-center ">
                             <div className=" w-2 h-2 inline-block rounded-[50%] bg-amber-400"></div>
                             <p className="text-[#868282] text-[10px]">OTHERS</p>
@@ -44,7 +44,7 @@ const Footer = () => {
                                 Contacts
                             </a>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
                 <div className="flex flex-col justify-between w-4/7 ">
                     <div className=" flex flex-col gap-15 p-2 ">

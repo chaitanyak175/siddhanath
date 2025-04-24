@@ -10,24 +10,36 @@ export const ProcessComponent = () => {
                 className={`w-full sm:w-1/3 flex flex-col gap-6 sm:sticky relative top-10 sm:top-20 self-start h-fit ${styles.ourprocesstext}`}
             >
                 <h2 className="text-5xl sm:text-7xl font-bebas">
-                    OUR PROCESS <span className="hidden sm:inline-block">:</span>
+                    OUR PROCESS{" "}
+                    <span className="hidden sm:inline-block">:</span>
                 </h2>
                 <h2 className="hidden sm:block sm:text-4xl">
                     A complete apparel manufacturing solution for your brand.
                 </h2>
                 <p className="hidden sm:block">
-                    From design to delivery, we ensure high-quality craftsmanship, efficient production, and timely execution to bring your vision to life.
+                    From design to delivery, we ensure high-quality
+                    craftsmanship, efficient production, and timely execution to
+                    bring your vision to life.
                 </p>
-                <button className="px-4 py-2 text-white bg-violet-500 hidden sm:block rounded-md hover:bg-violet-600 transition">
-                    Learn More
-                </button>
+                <a
+                    href="https://wa.me/918855069509"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2 text-white bg-violet-500 sm:block rounded-md hover:bg-violet-600 transition flex items-center justify-center"
+                >
+                    <div className="flex items-center justify-center">
+                        Learn More
+                    </div>
+                </a>
             </div>
 
             {/* Right Section with Cards */}
             <div className="flex flex-col gap-13 items-center w-full sm:w-2/3">
                 <ProcessCardComponent
                     title={"Design & Pattern Development"}
-                    description={"Our in-house design team creates custom patterns, ensuring precision, innovation, and brand consistency."}
+                    description={
+                        "Our in-house design team creates custom patterns, ensuring precision, innovation, and brand consistency."
+                    }
                     imageUrl={"/images/ourprocess/design2.jpg"}
                     className=""
                 />
@@ -35,7 +47,9 @@ export const ProcessComponent = () => {
 
                 <ProcessCardComponent
                     title={"Sampling"}
-                    description={"We develop high-quality samples for review, ensuring fabric, fit, and style align with your brand’s expectations."}
+                    description={
+                        "We develop high-quality samples for review, ensuring fabric, fit, and style align with your brand’s expectations."
+                    }
                     imageUrl={"/images/ourprocess/sampling2.jpg"}
                     className=""
                 />
@@ -43,7 +57,9 @@ export const ProcessComponent = () => {
 
                 <ProcessCardComponent
                     title={"Fabrics, Trims & Accessories Sourcing"}
-                    description={"We source premium fabrics and accessories to enhance durability, comfort, and aesthetic appeal."}
+                    description={
+                        "We source premium fabrics and accessories to enhance durability, comfort, and aesthetic appeal."
+                    }
                     imageUrl={"/images/ourprocess/accessories.jpg"}
                     className=""
                 />
@@ -51,7 +67,9 @@ export const ProcessComponent = () => {
 
                 <ProcessCardComponent
                     title={"Bulk Production"}
-                    description={"Using advanced manufacturing techniques, we ensure high-efficiency production while maintaining quality control."}
+                    description={
+                        "Using advanced manufacturing techniques, we ensure high-efficiency production while maintaining quality control."
+                    }
                     imageUrl={"/images/ourprocess/bulkproduction.jpg"}
                     className=""
                 />
@@ -59,7 +77,9 @@ export const ProcessComponent = () => {
 
                 <ProcessCardComponent
                     title={"Quality Checks"}
-                    description={"Every garment undergoes strict quality control to meet industry standards and exceed client expectations."}
+                    description={
+                        "Every garment undergoes strict quality control to meet industry standards and exceed client expectations."
+                    }
                     imageUrl={"/images/ourprocess/qualitycheck.png"}
                     className=""
                 />
@@ -67,7 +87,9 @@ export const ProcessComponent = () => {
 
                 <ProcessCardComponent
                     title={"Delivery"}
-                    description={"Timely and efficient logistics ensure your products reach you on schedule, ready for market distribution."}
+                    description={
+                        "Timely and efficient logistics ensure your products reach you on schedule, ready for market distribution."
+                    }
                     imageUrl={"/images/ourprocess/delivery.jpg"}
                     className=""
                 />
