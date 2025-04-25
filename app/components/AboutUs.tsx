@@ -13,10 +13,10 @@ const AboutUs = () => {
     });
 
     const text = [
-        "✔️ At Siddhanath Trendz Private Limited, we are a leading designer, manufacturer, and exporter of premium-quality apparel and corporate uniforms.",
-        "✔️ With in-house design expertise and advanced production capabilities, we offer end-to-end solutions tailored for fashion brands, retail chains, hospitality, e-commerce, and corporate industries.",
-        "✔️ From fabric sourcing to bulk production and strict quality checks, our commitment to craftsmanship, innovation, and durability ensures that every garment reflects professionalism and style.",
-        "✔️ Partner with us for expertly crafted apparel solutions that elevate your brand.",
+        "→ At Siddhanath Trendz Private Limited, we are a leading designer, manufacturer, and exporter of premium-quality apparel and corporate uniforms.",
+        "→ With in-house design expertise and advanced production capabilities, we offer end-to-end solutions tailored for fashion brands, retail chains, hospitality, e-commerce, and corporate industries.",
+        "→ From fabric sourcing to bulk production and strict quality checks, our commitment to craftsmanship, innovation, and durability ensures that every garment reflects professionalism and style.",
+        "→ Partner with us for expertly crafted apparel solutions that elevate your brand.",
     ];
 
     return (

@@ -18,7 +18,7 @@ const uniforms = [
         title: "Hospital Uniforms",
         image: "/images/categories/corporate/Hospital-Uniform.jpg",
     },
-    
+
     {
         title: "Industrial Uniforms",
         image: "/images/categories/corporate/Industrial-Uniforms.jpg",
@@ -80,9 +80,9 @@ export default function CorporateCollection() {
         // </div>
         <div className="w-screen flex flex-col gap-8">
             <ProductCarousel title="Corporate Collection" items={uniforms} />
-            <ProductCarousel title="Corporate Collection" items={uniforms} />
-            <ProductCarousel title="Corporate Collection" items={uniforms} />
-            <ProductCarousel title="Corporate Collection" items={uniforms} />
+            <ProductCarousel title="Hospital Collection" items={uniforms} />
+            <ProductCarousel title="Safety Equipment" items={uniforms} />
+            <ProductCarousel title="Corporate gift" items={uniforms} />
         </div>
     );
 }
