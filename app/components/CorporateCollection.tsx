@@ -1,51 +1,26 @@
 import Image from "next/image";
 import ProductCarousel from "./ProductCarousel";
 
-const uniforms = [
+const corporate = [
     {
-        title: "School Uniforms",
-        image: "/images/categories/corporate/School-Uniforms.avif",
+        title: "Corporate Suits",
+        image: "/images/categories/corporate/corporate-suits.jpg",
     },
     {
-        title: "Industrial Uniforms",
-        image: "/images/categories/corporate/Industrial-Uniforms.jpg",
+        title: "Custom Jackets",
+        image: "/images/categories/corporate/custom-jackets.jpg",
     },
     {
-        title: "Sports Uniforms",
-        image: "/images/categories/corporate/Sports-Uniform.jpg",
+        title: "Custom Ties",
+        image: "/images/categories/corporate/custom-ties.jpg",
     },
     {
-        title: "Hospital Uniforms",
-        image: "/images/categories/corporate/Hospital-Uniform.jpg",
-    },
-
-    {
-        title: "Industrial Uniforms",
-        image: "/images/categories/corporate/Industrial-Uniforms.jpg",
+        title: "Formal Shirts",
+        image: "/images/categories/corporate/formal-shirts.avif",
     },
     {
-        title: "Sports Uniforms",
-        image: "/images/categories/corporate/Sports-Uniform.jpg",
-    },
-    {
-        title: "Hospital Uniforms",
-        image: "/images/categories/corporate/Hospital-Uniform.jpg",
-    },
-    {
-        title: "School Uniforms",
-        image: "/images/categories/corporate/School-Uniforms.avif",
-    },
-    {
-        title: "Industrial Uniforms",
-        image: "/images/categories/corporate/Industrial-Uniforms.jpg",
-    },
-    {
-        title: "Sports Uniforms",
-        image: "/images/categories/corporate/Sports-Uniform.jpg",
-    },
-    {
-        title: "Hospital Uniforms",
-        image: "/images/categories/corporate/Hospital-Uniform.jpg",
+        title: "Polo T-Shirts",
+        image: "/images/categories/corporate/polo-tshirts.webp",
     },
 ];
 
@@ -144,13 +119,10 @@ export default function CorporateCollection() {
         //     </div>
         // </div>
         <div className="w-screen flex flex-col gap-8">
-            <ProductCarousel title="Corporate Collection" items={uniforms} />
+            <ProductCarousel title="Corporate Collection" items={corporate} />
             <ProductCarousel title="Hospital Collection" items={hospital} />
-            <ProductCarousel
-                title="Safety Equipment"
-                items={corporateGifting}
-            />
-            <ProductCarousel title="Corporate gift" items={uniforms} />
+            <ProductCarousel title="Safety Equipment" items={safetyEquipment} />
+            <ProductCarousel title="Corporate gift" items={corporateGifting} />
         </div>
     );
 }

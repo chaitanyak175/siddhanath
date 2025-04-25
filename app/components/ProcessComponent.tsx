@@ -22,7 +22,7 @@ export const ProcessComponent = () => {
                     bring your vision to life.
                 </p>
                 <a
-                    href="https://wa.me/918855069509"
+                    href="https://wa.me/917263095032"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="px-4 py-2 text-white bg-violet-500 sm:block rounded-md hover:bg-violet-600 transition flex items-center justify-center"
