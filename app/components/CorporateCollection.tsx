@@ -20,7 +20,7 @@ const corporate = [
     },
     {
         title: "Polo T-Shirts",
-        image: "/images/categories/corporate/polo-tshirts.webp",
+        image: "/images/categories/corporate/polo-tshirts.jpg",
     },
 ];
 
@@ -121,8 +121,8 @@ export default function CorporateCollection() {
         <div className="w-screen flex flex-col gap-8">
             <ProductCarousel title="Corporate Collection" items={corporate} />
             <ProductCarousel title="Hospital Collection" items={hospital} />
-            <ProductCarousel title="Safety Equipment" items={safetyEquipment} />
             <ProductCarousel title="Corporate gift" items={corporateGifting} />
+            <ProductCarousel title="Safety Equipment" items={safetyEquipment} />
         </div>
     );
 }
