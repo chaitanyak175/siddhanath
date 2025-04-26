@@ -14,21 +14,33 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const testimonials = [
     {
         id: 1,
-        title: "Silvee.in transformed our business with their exceptional services!",
+        title: "End-to-End Custom Solutions",
         description:
-            "John Doe is the hero of industry who makes clothes for every event in life from birth to death",
+            "From design to delivery, we offer fully tailored solutions across uniforms, safety gear, and corporate gifting—aligned with your brand, workforce needs, and industry standards.",
     },
     {
         id: 2,
-        title: "Silvee.in transformed our business with their exceptional services!",
+        title: "Process-Driven Execution",
         description:
-            "John Doe is the hero of industry who makes clothes for every event in life from birth to death",
+            "We follow structured SOPs, transparent timelines, and quality control systems to ensure smooth execution, reliable service, and timely fulfilment—every time.",
     },
     {
         id: 3,
-        title: "Silvee.in transformed our business with their exceptional services!",
+        title: "Multi-Vertical Expertise",
         description:
-            "John Doe is the hero of industry who makes clothes for every event in life from birth to death",
+            "Our diversified experience spans corporate, industrial, hospitality, and retail sectors, enabling us to cater to complex requirements with precision and consistency.",
+    },
+    {
+        id: 4,
+        title: "Vendor-Integrated Sourcing Model",
+        description:
+            "With deep-rooted supply chain partnerships across India, we deliver cost-effective, scalable solutions without compromising on quality or lead time.",
+    },
+    {
+        id: 5,
+        title: "Commitment to Professionalism",
+        description:
+            "Our approach is built on clarity, accountability, and long-term relationships. We don’t just deliver products—we become your trusted execution partner.",
     },
 ];
 
@@ -84,7 +96,7 @@ const TestimonialCarousel = () => {
                         transition={{ duration: 0.5 }}
                         className="space-y-4 flex flex-col items-center"
                     >
-                        <p className="text-xl font-bold text-black sm:text-4xl font-gilroy">
+                        <p className="text-xl font-bold text-black sm:text-5xl font-gilroy">
                             {testimonials[currentIndex].title}
                         </p>
                         {/* <h4 className="text-sm font-semibold text-gray-900">
