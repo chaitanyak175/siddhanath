@@ -17,8 +17,9 @@ const Hero = () => {
                         fill
                         sizes="(max-width: 768px) 100vw, 100vw"
                         priority
+                        quality={100}
                         className="w-full h-full object-cover absolute"
-                    />{" "}
+                    />
                     <div className="absolute sm:flex sm:top-0 mt-30 sm:mt-60 flex-col text-lg">
                         <div className="text-white text-4xl  sm:text-6xl font-gilroy">
                             All-in-1
