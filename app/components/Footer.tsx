@@ -58,8 +58,12 @@ const Footer = () => {
                                     </p>
                                 </div>
                                 <div className="flex flex-col gap-2 text-sm text-[#c8c8c8c5] ">
-                                    <a href="">+91 7263095032</a>
-                                    <a href="">test@gangaprasad.com</a>
+                                    <a href="tel:+917263095032">
+                                        +91 7263095032
+                                    </a>
+                                    <a href="mailto:siddhanath@sdtorg.com">
+                                        siddhanath@sdtorg.com
+                                    </a>
                                 </div>
                             </div>
 

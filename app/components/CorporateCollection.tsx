@@ -89,6 +89,37 @@ const corporateGifting = [
     },
 ];
 
+const industrial = [
+    {
+        title: "Cargo Pants",
+        image: "/images/categories/industrial/cargo-pants.avif",
+    },
+    {
+        title: "Industrial Coveralls",
+        image: "/images/categories/industrial/industrial-coveralls.jpg",
+    },
+    {
+        title: "Industrial Shirts",
+        image: "/images/categories/industrial/industrial-shirts.jpg",
+    },
+    {
+        title: "Protective Aprons",
+        image: "/images/categories/industrial/protective-aprons.webp",
+    },
+    {
+        title: "Safety Bib",
+        image: "/images/categories/industrial/safety-bib.webp",
+    },
+    {
+        title: "Welding Jackets",
+        image: "/images/categories/industrial/welding-jackets.jpeg",
+    },
+    {
+        title: "Work Jacket",
+        image: "/images/categories/industrial/work-jacket.jpg",
+    },
+];
+
 export default function CorporateCollection() {
     return (
         // <div className="py-12 px-4 md:px-12 bg-[#e9d7d9]">
@@ -120,6 +151,7 @@ export default function CorporateCollection() {
         // </div>
         <div className="w-screen flex flex-col gap-8">
             <ProductCarousel title="Corporate Collection" items={corporate} />
+            <ProductCarousel title="Industrial Collection" items={industrial} />
             <ProductCarousel title="Hospital Collection" items={hospital} />
             <ProductCarousel title="Corporate gift" items={corporateGifting} />
             <ProductCarousel title="Safety Equipment" items={safetyEquipment} />
