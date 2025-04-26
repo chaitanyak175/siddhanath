@@ -80,7 +80,7 @@ const ProductCarousel = ({ title, items }: Props) => {
                                 <img
                                     src={item.image}
                                     alt={item.title}
-                                    className="w-60 h-60 object-contain rounded-2xl shadow-md mb-3"
+                                    className="w-60 h-60 object-cover rounded-2xl shadow-md mb-3"
                                 />
                                 <p className="text-lg  font-semibold text-center text-black font-gilroy">
                                     {item.title}
