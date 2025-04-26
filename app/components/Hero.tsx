@@ -15,9 +15,10 @@ const Hero = () => {
                         src="/images/hero-section.png"
                         alt="Hero Background"
                         fill
-                        // sizes="(max-width: 768px) 100vw, 100vw"
-                        // priority
+                        priority
+                        sizes="100vw"
                         quality={100}
+                        unoptimized={true}
                         className="w-full h-full object-cover absolute"
                     />
                     <div className="absolute sm:flex sm:top-0 mt-30 sm:mt-60 flex-col text-lg">
