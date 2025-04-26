@@ -23,7 +23,7 @@ export const AnimatedText = ({ examples }: { examples: string[] }) => {
     }, []);
 
     return (
-        <p className="sm:mb-3 text-sm font-light uppercase">
+        <p className="sm:mb-3 text-sm font-light uppercase text-white">
             {/* <span className="inline-block size-2 bg-neutral-950" /> */}
             <span className="">
                 {" "}
