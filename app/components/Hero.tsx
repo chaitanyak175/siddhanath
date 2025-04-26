@@ -15,8 +15,8 @@ const Hero = () => {
                         src="/images/hero-section.png"
                         alt="Hero Background"
                         fill
-                        sizes="(max-width: 768px) 100vw, 100vw"
-                        priority
+                        // sizes="(max-width: 768px) 100vw, 100vw"
+                        // priority
                         quality={100}
                         className="w-full h-full object-cover absolute"
                     />
