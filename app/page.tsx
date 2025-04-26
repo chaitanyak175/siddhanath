@@ -46,6 +46,9 @@ export default function Home() {
                 <div id="Products">
                     <ClothingDesignSteps />
                 </div>
+                <div>
+                    <CorporateCollection />
+                </div>
                 {/* <DesignProcess/> */}
                 <div id="About">
                     <AboutUs />
@@ -55,10 +58,6 @@ export default function Home() {
                 </div>
                 <div id="Process">
                     <ProcessComponent />
-                </div>
-
-                <div>
-                    <CorporateCollection />
                 </div>
 
                 <div id="Why Us">
