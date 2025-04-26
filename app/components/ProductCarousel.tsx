@@ -58,7 +58,7 @@ const ProductCarousel = ({ title, items }: Props) => {
     const visibleItems = getVisibleItems();
 
     return (
-        <div className="w-screen px-2 sm:px-8 md:px-12 lg:px-20 py-6 bg-[#e9d7d9] mb-8">
+        <div className="max-w-full mx-10 px-2 sm:px-8 md:px-12 lg:px-20 py-6 bg-[#e9d7d9] mb-2 mt-6 rounded-2xl shadow-xl">
             <h2 className="font-bold text-center text-3xl mb-10 text-black font-bebas">
                 {title}
             </h2>
