@@ -100,12 +100,14 @@ const Footer = () => {
                                         />
                                     </div>
 
-                                    <div className=" flex justify-center items-center rounded-full w-10 h-10 bg-[#d1d1c4] border ">
-                                        <FontAwesomeIcon
-                                            icon={faWhatsapp}
-                                            color="black"
-                                            className="text-sm h-7"
-                                        />
+                                    <div className=" flex justify-center items-center rounded-full w-10 h-10 bg-[#d1d1c4] border cursor-pointer">
+                                        <a href="https://wa.me/917263095032">
+                                            <FontAwesomeIcon
+                                                icon={faWhatsapp}
+                                                color="black"
+                                                className="text-sm h-7"
+                                            />
+                                        </a>
                                     </div>
                                 </div>
                             </div>
