@@ -89,6 +89,29 @@ const corporateGifting = [
     },
 ];
 
+const hotel = [
+    {
+        title: "Bartender Uniform",
+        image: "/images/categories/hotel/bartender-uniform.jpeg",
+    },
+    {
+        title: "Bellboy Uniform",
+        image: "/images/categories/hotel/bellboy-uniform.webp",
+    },
+    {
+        title: "Chef Coats",
+        image: "/images/categories/hotel/chef-coats.jpg",
+    },
+    {
+        title: "Front Desk Uniform",
+        image: "/images/categories/hotel/front-desk-uniform.webp",
+    },
+    {
+        title: "Waitstaff Uniforms",
+        image: "/images/categories/hotel/waitstaff-uniforms.webp",
+    },
+];
+
 const industrial = [
     {
         title: "Cargo Pants",
@@ -152,6 +175,7 @@ export default function CorporateCollection() {
         <div className="w-screen flex flex-col gap-8">
             <ProductCarousel title="Corporate Collection" items={corporate} />
             <ProductCarousel title="Industrial Collection" items={industrial} />
+            <ProductCarousel title="Hotel Collection" items={hotel} />
             <ProductCarousel title="Hospital Collection" items={hospital} />
             <ProductCarousel title="Corporate gift" items={corporateGifting} />
             <ProductCarousel title="Safety Equipment" items={safetyEquipment} />
