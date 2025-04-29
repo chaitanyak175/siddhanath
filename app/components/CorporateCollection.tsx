@@ -19,6 +19,10 @@ const corporate = [
         image: "/images/categories/corporate/formal-shirts.avif",
     },
     {
+        title: "Formal Trousers",
+        image: "/images/categories/corporate/formal-trousers.webp",
+    },
+    {
         title: "Polo T-Shirts",
         image: "/images/categories/corporate/polo-tshirts.jpg",
     },
@@ -76,6 +80,14 @@ const safetyEquipment = [
         title: "Visibility Jackets",
         image: "/images/categories/safety-equipment/visibility-tshirts.webp",
     },
+    {
+        title: "Safety Shoes",
+        image: "/images/categories/safety-equipment/safety-shoes.webp",
+    },
+    {
+        title: "Safety Masks",
+        image: "/images/categories/safety-equipment/safety-mask.jpg",
+    },
 ];
 
 const sportsItems = [
@@ -85,7 +97,7 @@ const sportsItems = [
     },
     {
         title: "Sports Pants",
-        image: "/images/categories/sports/sports-pants.jpg",
+        image: "/images/categories/sports/sports-pants.webp",
     },
     {
         title: "Sports Socks",
@@ -116,7 +128,7 @@ const corporateGifting = [
     },
     {
         title: "Corporate Backpack",
-        image: "/images/categories/corporate-gifting/corporate-backpack.png",
+        image: "/images/categories/corporate-gifting/corporate-backpack.webp",
     },
     {
         title: "Corporate Bottle",
@@ -125,6 +137,10 @@ const corporateGifting = [
     {
         title: "Corporate Cardholder",
         image: "/images/categories/corporate-gifting/corporate-cardholder.webp",
+    },
+    {
+        title: "Corporate Keychain",
+        image: "/images/categories/corporate-gifting/corporate-keychain.webp",
     },
     {
         title: "Corporate Diary",
@@ -209,7 +225,7 @@ const industrial = [
     },
     {
         title: "Cargo Shirt",
-        image: "/images/categories/industrial/cargo-shirt.webp",
+        image: "/images/categories/industrial/cargo-shirt.jpg",
     },
     {
         title: "Industrial Coveralls",
@@ -227,6 +243,7 @@ const industrial = [
         title: "Safety Bib",
         image: "/images/categories/industrial/safety-bib.webp",
     },
+
     {
         title: "Welding Jackets",
         image: "/images/categories/industrial/welding-jackets.jpeg",

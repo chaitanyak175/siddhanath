@@ -12,7 +12,7 @@ const Hero = () => {
             >
                 <div id="container" className="w-full h-full sm:px-24 px-6">
                     <Image
-                        src="/images/hero-section.png"
+                        src="/images/hero-section1.jpg"
                         alt="Hero Background"
                         fill
                         priority

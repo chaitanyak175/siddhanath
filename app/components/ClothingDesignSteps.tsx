@@ -11,10 +11,16 @@ const ClothingDesignSteps = () => {
         "/images/shirts/shirt4.png",
         "/images/shirts/shirt5.png",
     ];
+
     const tshirts = [
         "/images/tshirts/tshirt1.png",
         "/images/tshirts/tshirt2.png",
         "/images/tshirts/tshirt3.png",
+        "/images/tshirts/tshirt4.avif",
+        "/images/tshirts/tshirt5.jpg",
+        "/images/tshirts/tshirt6.jpg",
+        "/images/tshirts/tshirt7.avif",
+        "/images/tshirts/tshirt8.webp",
     ];
 
     const pants = [
