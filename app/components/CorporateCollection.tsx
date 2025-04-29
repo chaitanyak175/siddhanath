@@ -30,6 +30,14 @@ const hospital = [
         image: "/images/categories/hospital/hospital-uniform.webp",
     },
     {
+        title: "Hospital Bedsheets",
+        image: "/images/categories/hospital/hospital-bedsheets.jpeg",
+    },
+    {
+        title: "Hospital Curtains",
+        image: "/images/categories/hospital/hospital-curtains.jpeg",
+    },
+    {
         title: "Lab Coats",
         image: "/images/categories/hospital/lab-coats.webp",
     },
@@ -65,8 +73,27 @@ const safetyEquipment = [
         image: "/images/categories/safety-equipment/safety-helmets.jpg",
     },
     {
-        title: "Visibility T-Shirts",
+        title: "Visibility Jackets",
         image: "/images/categories/safety-equipment/visibility-tshirts.webp",
+    },
+];
+
+const sportsItems = [
+    {
+        title: "Sports Cap",
+        image: "/images/categories/sports/sports-cap.jpg",
+    },
+    {
+        title: "Sports Pants",
+        image: "/images/categories/sports/sports-pants.jpg",
+    },
+    {
+        title: "Sports Socks",
+        image: "/images/categories/sports/sports-socks.jpeg",
+    },
+    {
+        title: "Sports T-Shirts",
+        image: "/images/categories/sports/sports-tshirts.webp",
     },
 ];
 
@@ -87,12 +114,44 @@ const corporateGifting = [
         title: "Monogrammed Towels",
         image: "/images/categories/corporate-gifting/monogrammed-towels.webp",
     },
+    {
+        title: "Corporate Backpack",
+        image: "/images/categories/corporate-gifting/corporate-backpack.png",
+    },
+    {
+        title: "Corporate Bottle",
+        image: "/images/categories/corporate-gifting/corporate-bottle.webp",
+    },
+    {
+        title: "Corporate Cardholder",
+        image: "/images/categories/corporate-gifting/corporate-cardholder.webp",
+    },
+    {
+        title: "Corporate Diary",
+        image: "/images/categories/corporate-gifting/corporate-diary.avif",
+    },
+    {
+        title: "Corporate Lunchbox",
+        image: "/images/categories/corporate-gifting/corporate-lunchbox.jpg",
+    },
+    {
+        title: "Corporate Pens",
+        image: "/images/categories/corporate-gifting/corporate-pens.webp",
+    },
 ];
 
 const hotel = [
     {
         title: "Bartender Uniform",
         image: "/images/categories/hotel/bartender-uniform.jpeg",
+    },
+    {
+        title: "Chef Appron",
+        image: "/images/categories/hotel/chef-appron.webp",
+    },
+    {
+        title: "Chef Cap",
+        image: "/images/categories/hotel/chef-cap.webp",
     },
     {
         title: "Bellboy Uniform",
@@ -110,12 +169,47 @@ const hotel = [
         title: "Waitstaff Uniforms",
         image: "/images/categories/hotel/waitstaff-uniforms.webp",
     },
+    {
+        title: "Hotel Bellboy",
+        image: "/images/categories/hotel/hotel-bellboy.jpg",
+    },
+    {
+        title: "Hotel Guard",
+        image: "/images/categories/hotel/hotel-guard.avif",
+    },
+    {
+        title: "Hotel Receptionist",
+        image: "/images/categories/hotel/hotel-receptionist.jpg",
+    },
+];
+
+const hotelLinen = [
+    {
+        title: "Hotel Bedsheet",
+        image: "/images/categories/hotel-linen/hotel-bedsheet.jpg",
+    },
+    {
+        title: "Hotel Curtains",
+        image: "/images/categories/hotel-linen/hotel-curtains.webp",
+    },
+    {
+        title: "Hotel Napkin",
+        image: "/images/categories/hotel-linen/hotel-napkin.webp",
+    },
+    {
+        title: "Hotel Pillow Cover",
+        image: "/images/categories/hotel-linen/hotel-pillowcover.webp",
+    },
 ];
 
 const industrial = [
     {
         title: "Cargo Pants",
         image: "/images/categories/industrial/cargo-pants.avif",
+    },
+    {
+        title: "Cargo Shirt",
+        image: "/images/categories/industrial/cargo-shirt.webp",
     },
     {
         title: "Industrial Coveralls",
@@ -176,7 +270,9 @@ export default function CorporateCollection() {
             <ProductCarousel title="Corporate Collection" items={corporate} />
             <ProductCarousel title="Industrial Collection" items={industrial} />
             <ProductCarousel title="Hotel Collection" items={hotel} />
+            <ProductCarousel title="Hotel Linen" items={hotelLinen} />
             <ProductCarousel title="Hospital Collection" items={hospital} />
+            <ProductCarousel title="Sports Collection" items={sportsItems} />
             <ProductCarousel title="Corporate gift" items={corporateGifting} />
             <ProductCarousel title="Safety Equipment" items={safetyEquipment} />
         </div>

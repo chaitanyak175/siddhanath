@@ -33,7 +33,7 @@ const ClothingDesignSteps = () => {
                     your brand.
                 </p>
                 <div className="text-4xl font-bold xl:mt-2 mx-2">
-                    <h2>"How to Create Custom Apparel</h2>
+                    <h2>"Want to Create Custom Apparel</h2>
                     <h2>for Your Business?"</h2>
                 </div>
             </div>
