@@ -159,7 +159,7 @@ const corporateGifting = [
 const hotel = [
     {
         title: "Bartender Uniform",
-        image: "/images/categories/hotel/bartender-uniform.jpeg",
+        image: "/images/categories/hotel/bartender-uniform.webp",
     },
     {
         title: "Chef Appron",
