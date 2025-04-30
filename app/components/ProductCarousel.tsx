@@ -164,13 +164,7 @@ const ProductCarousel = ({ title, items }: Props) => {
                                 >
                                     <div className="relative w-60 h-60 mb-3">
                                         {!isLoaded && (
-                                            <div className="absolute inset-0 rounded-2xl overflow-hidden">
-                                                {/* Shimmer effect container */}
-                                                <div className="w-full h-full bg-gray-200 relative">
-                                                    {/* Animated shimmer overlay */}
-                                                    <div className="absolute inset-0 shimmer-effect"></div>
-                                                </div>
-                                            </div>
+                                            <div className="absolute inset-0 animate-pulse bg-gradient-to-r from-gray-200 via-gray-300 to-gray-200 rounded-2xl" />
                                         )}
                                         <Image
                                             src={item.image}
@@ -207,30 +201,6 @@ const ProductCarousel = ({ title, items }: Props) => {
                     <ChevronRight size={28} />
                 </button>
             </div>
-
-            {/* Add the shimmer effect CSS */}
-            <style jsx global>{`
-                @keyframes shimmer {
-                    0% {
-                        transform: translateX(-100%);
-                    }
-                    100% {
-                        transform: translateX(100%);
-                    }
-                }
-
-                .shimmer-effect {
-                    background: linear-gradient(
-                        to right,
-                        rgba(255, 255, 255, 0) 0%,
-                        rgba(255, 255, 255, 0.5) 50%,
-                        rgba(255, 255, 255, 0) 100%
-                    );
-                    animation: shimmer 1.5s infinite;
-                    width: 100%;
-                    height: 100%;
-                }
-            `}</style>
         </div>
     );
 };
