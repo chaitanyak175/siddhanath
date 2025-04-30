@@ -21,8 +21,8 @@ const Header = () => {
     ];
     return (
         <header className="flex justify-between items-center px-6 absolute z-10 w-full">
-            <div className=" flex justify-between w-full items-center py-3 border-b-2 border-white">
-                <Link href="/" className="font-bebas text-white text-xl">
+            <div className=" flex justify-between w-full items-center py-3 border-b-2 border-black">
+                <Link href="/" className="font-bebas text-black text-xl">
                     Siddhanath Trendz
                 </Link>{" "}
                 <ul
@@ -51,7 +51,7 @@ const Header = () => {
                         href="https://wa.me/917263095032"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="sm:block font-bebas hidden border-2 border-white rounded-full px-3 py-1 text-white hover:bg-white hover:text-black duration-300"
+                        className="sm:block font-bebas hidden border-2 border-black rounded-full px-3 py-1 text-black hover:bg-black hover:text-white duration-300"
                     >
                         Contact Us
                     </a>
