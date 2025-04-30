@@ -18,6 +18,37 @@ const ProductCarousel = ({ title, items }: Props) => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [itemsPerPage, setItemsPerPage] = useState(4);
     const timeoutRef = useRef<ReturnType<typeof setInterval> | null>(null);
+    // Track image loading status for all images, not just visible ones
+    const [imageLoadStates, setImageLoadStates] = useState<
+        Record<string, boolean>
+    >({});
+    // Track which images we've started preloading
+    const preloadedImages = useRef<Set<string>>(new Set());
+
+    // Preload all images on component mount
+    useEffect(() => {
+        // Create a function to preload an image
+        const preloadImage = (src: string) => {
+            // Skip if already preloaded
+            if (preloadedImages.current.has(src)) return;
+
+            // Mark as preloaded
+            preloadedImages.current.add(src);
+
+            // Create a new image object
+            const img = new window.Image();
+            img.src = src;
+            img.onload = () => {
+                setImageLoadStates((prev) => ({
+                    ...prev,
+                    [src]: true,
+                }));
+            };
+        };
+
+        // Preload all images
+        items.forEach((item) => preloadImage(item.image));
+    }, [items]);
 
     useEffect(() => {
         const updateItemsPerPage = () => {
@@ -49,6 +80,7 @@ const ProductCarousel = ({ title, items }: Props) => {
         };
     }, [items.length]);
 
+    // Get items to display
     const getVisibleItems = () => {
         let visible: Item[] = [];
         for (let i = 0; i < itemsPerPage; i++) {
@@ -58,14 +90,56 @@ const ProductCarousel = ({ title, items }: Props) => {
         return visible;
     };
 
-    const [imageLoadStates, setImageLoadStates] = useState<
-        Record<string, boolean>
-    >({});
-
     const visibleItems = getVisibleItems();
 
+    // Also preload the next set of images that will be shown after the current ones
+    useEffect(() => {
+        // Determine which images will be shown next and ensure they're loaded
+        for (let i = 0; i < itemsPerPage; i++) {
+            const nextIndex = (currentIndex + itemsPerPage + i) % items.length;
+            const nextImageSrc = items[nextIndex].image;
+
+            // Skip if already preloaded
+            if (preloadedImages.current.has(nextImageSrc)) continue;
+
+            // Mark as preloaded
+            preloadedImages.current.add(nextImageSrc);
+
+            // Create a new image object
+            const img = new window.Image();
+            img.src = nextImageSrc;
+            img.onload = () => {
+                setImageLoadStates((prev) => ({
+                    ...prev,
+                    [nextImageSrc]: true,
+                }));
+            };
+        }
+    }, [currentIndex, items, itemsPerPage]);
+
+    // Pause autoplay when user hovers over carousel
+    const handleMouseEnter = () => {
+        if (timeoutRef.current) {
+            clearInterval(timeoutRef.current);
+            timeoutRef.current = null;
+        }
+    };
+
+    // Resume autoplay when user leaves carousel
+    const handleMouseLeave = () => {
+        if (!timeoutRef.current) {
+            timeoutRef.current = setInterval(() => {
+                nextSlide();
+            }, 3000);
+        }
+    };
+
     return (
-        <div className="max-w-full mx-10 px-2 sm:px-8 md:px-12 lg:px-20 py-6 bg-[#e9d7d9] mb-2 mt-6 rounded-2xl shadow-xl">
+        <div
+            className="max-w-full mx-10 px-2 sm:px-8 md:px-12 lg:px-20 py-6 bg-[#e9d7d9] mb-2 mt-6 rounded-2xl shadow-xl"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+        >
             <h2 className="font-bold text-center text-3xl mb-10 text-black font-bebas">
                 {title}
             </h2>
@@ -73,6 +147,7 @@ const ProductCarousel = ({ title, items }: Props) => {
                 <button
                     onClick={prevSlide}
                     className="absolute left-2 z-10 p-2 bg-white rounded-full shadow hover:bg-gray-100"
+                    aria-label="Previous slide"
                 >
                     <ChevronLeft size={28} />
                 </button>
@@ -80,26 +155,27 @@ const ProductCarousel = ({ title, items }: Props) => {
                 <div className="w-full overflow-hidden">
                     <div className="grid grid-cols-1 sm:grid-cols-4 gap-1 transition-transform duration-500 ease-in-out">
                         {visibleItems.map((item, index) => {
-                            const isLoading = !imageLoadStates[item.image];
+                            const isLoaded = imageLoadStates[item.image];
 
                             return (
                                 <div
-                                    key={index}
+                                    key={`${currentIndex}-${index}`}
                                     className="flex flex-col items-center w-full"
                                 >
                                     <div className="relative w-60 h-60 mb-3">
-                                        {isLoading && (
+                                        {!isLoaded && (
                                             <div className="absolute inset-0 animate-pulse bg-gradient-to-r from-gray-200 via-gray-300 to-gray-200 rounded-2xl" />
                                         )}
                                         <Image
                                             src={item.image}
                                             alt={item.title}
                                             fill
-                                            className={`rounded-2xl shadow-md object-cover transition-opacity duration-500 ${
-                                                isLoading
-                                                    ? "opacity-0"
-                                                    : "opacity-100"
+                                            className={`rounded-2xl shadow-md object-cover transition-opacity duration-300 ${
+                                                isLoaded
+                                                    ? "opacity-100"
+                                                    : "opacity-0"
                                             }`}
+                                            priority={index === 0} // Only set priority on the first visible image
                                             onLoad={() => {
                                                 setImageLoadStates((prev) => ({
                                                     ...prev,
@@ -120,6 +196,7 @@ const ProductCarousel = ({ title, items }: Props) => {
                 <button
                     onClick={nextSlide}
                     className="absolute right-2 z-10 p-2 bg-white rounded-full shadow hover:bg-gray-100"
+                    aria-label="Next slide"
                 >
                     <ChevronRight size={28} />
                 </button>
