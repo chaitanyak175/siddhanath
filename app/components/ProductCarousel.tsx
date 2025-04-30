@@ -58,6 +58,10 @@ const ProductCarousel = ({ title, items }: Props) => {
         return visible;
     };
 
+    const [imageLoadStates, setImageLoadStates] = useState<
+        Record<string, boolean>
+    >({});
+
     const visibleItems = getVisibleItems();
 
     return (
@@ -76,7 +80,7 @@ const ProductCarousel = ({ title, items }: Props) => {
                 <div className="w-full overflow-hidden">
                     <div className="grid grid-cols-1 sm:grid-cols-4 gap-1 transition-transform duration-500 ease-in-out">
                         {visibleItems.map((item, index) => {
-                            const [isLoading, setIsLoading] = useState(true);
+                            const isLoading = !imageLoadStates[item.image];
 
                             return (
                                 <div
@@ -96,7 +100,12 @@ const ProductCarousel = ({ title, items }: Props) => {
                                                     ? "opacity-0"
                                                     : "opacity-100"
                                             }`}
-                                            onLoad={() => setIsLoading(false)}
+                                            onLoad={() => {
+                                                setImageLoadStates((prev) => ({
+                                                    ...prev,
+                                                    [item.image]: true,
+                                                }));
+                                            }}
                                         />
                                     </div>
                                     <p className="text-lg font-semibold text-center text-black font-gilroy">
