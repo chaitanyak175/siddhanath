@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import Image from "next/image";
 
 type Item = {
     image: string;
@@ -72,21 +73,36 @@ const ProductCarousel = ({ title, items }: Props) => {
 
                 <div className="w-full overflow-hidden">
                     <div className="grid grid-cols-1 sm:grid-cols-4 gap-1 transition-transform duration-500 ease-in-out">
-                        {visibleItems.map((item, index) => (
-                            <div
-                                key={index}
-                                className="flex flex-col items-center w-full"
-                            >
-                                <img
-                                    src={item.image}
-                                    alt={item.title}
-                                    className="w-60 h-60 object-cover rounded-2xl shadow-md mb-3"
-                                />
-                                <p className="text-lg  font-semibold text-center text-black font-gilroy">
-                                    {item.title}
-                                </p>
-                            </div>
-                        ))}
+                        {visibleItems.map((item, index) => {
+                            const [isLoading, setIsLoading] = useState(true);
+
+                            return (
+                                <div
+                                    key={index}
+                                    className="flex flex-col items-center w-full"
+                                >
+                                    <div className="relative w-60 h-60 mb-3">
+                                        {isLoading && (
+                                            <div className="absolute inset-0 animate-pulse bg-gradient-to-r from-gray-200 via-gray-300 to-gray-200 rounded-2xl" />
+                                        )}
+                                        <Image
+                                            src={item.image}
+                                            alt={item.title}
+                                            fill
+                                            className={`rounded-2xl shadow-md object-cover transition-opacity duration-500 ${
+                                                isLoading
+                                                    ? "opacity-0"
+                                                    : "opacity-100"
+                                            }`}
+                                            onLoad={() => setIsLoading(false)}
+                                        />
+                                    </div>
+                                    <p className="text-lg font-semibold text-center text-black font-gilroy">
+                                        {item.title}
+                                    </p>
+                                </div>
+                            );
+                        })}
                     </div>
                 </div>
 
