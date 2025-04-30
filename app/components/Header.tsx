@@ -22,11 +22,14 @@ const Header = () => {
     return (
         <header className="flex justify-between items-center px-6 absolute z-10 w-full">
             <div className=" flex justify-between w-full items-center py-3 border-b-2 border-black">
-                <Link href="/" className="font-bebas text-black text-xl">
+                <Link
+                    href="/"
+                    className="font-bebas sm:text-black text-xl text-white"
+                >
                     Siddhanath Trendz
                 </Link>{" "}
                 <ul
-                    className={`flex flex-col duration-300 sm:flex-row absolute right-0 bg-black w-screen h-screen sm:h-fit sm:w-fit sm:top-0 sm:relative sm:bg-transparent gap-6 justify-center items-center ${
+                    className={`flex flex-col duration-300 sm:flex-row absolute right-0 bg-white w-screen h-screen sm:h-fit sm:w-fit sm:top-0 sm:relative sm:bg-transparent gap-6 justify-center items-center ${
                         showMenu ? "top-0" : "-top-[100vh]"
                     } `}
                 >
@@ -43,7 +46,7 @@ const Header = () => {
                 <div>
                     <button
                         onClick={() => toggleMenu()}
-                        className="text-white sm:hidden z-20 relative"
+                        className="sm:text-white sm:hidden z-20 relative text-black"
                     >
                         {showMenu ? "Close" : "Menu"}
                     </button>
