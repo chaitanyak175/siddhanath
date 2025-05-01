@@ -9,7 +9,7 @@ const ClothingDesignSteps = () => {
         "/images/shirts/shirt2.png",
         "/images/shirts/shirt3.png",
         "/images/shirts/shirt4.png",
-        "/images/shirts/shirt5.png",
+        "/images/shirts/shirt6.png",
     ];
 
     const tshirts = [
