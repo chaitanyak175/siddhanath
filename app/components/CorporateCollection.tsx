@@ -104,6 +104,10 @@ const sportsItems = [
         image: "/images/categories/sports/sports-socks.jpeg",
     },
     {
+        title: "Sports Jackets",
+        image: "/images/categories/sports/sports-jackets.webp",
+    },
+    {
         title: "Sports T-Shirts",
         image: "/images/categories/sports/sports-tshirts.webp",
     },
