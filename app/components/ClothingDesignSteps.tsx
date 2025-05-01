@@ -14,7 +14,6 @@ const ClothingDesignSteps = () => {
 
     const tshirts = [
         "/images/tshirts/tshirt1.png",
-        "/images/tshirts/tshirt2.png",
         "/images/tshirts/tshirt3.png",
         "/images/tshirts/tshirt4.avif",
         "/images/tshirts/tshirt5.jpg",
