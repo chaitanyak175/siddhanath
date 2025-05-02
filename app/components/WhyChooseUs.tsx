@@ -94,7 +94,7 @@ const TestimonialCarousel = () => {
                         animate={{ opacity: 1, x: 0, y: 100 }}
                         exit={{ opacity: 0, x: -10 }}
                         transition={{ duration: 0.5 }}
-                        className="space-y-4 flex flex-col items-center"
+                        className="space-y-4 flex flex-col items-center sm:gap-4 gap-3"
                     >
                         <p className="text-xl font-bold text-black sm:text-5xl font-gilroy">
                             {testimonials[currentIndex].title}
@@ -102,7 +102,7 @@ const TestimonialCarousel = () => {
                         {/* <h4 className="text-sm font-semibold text-gray-900">
                         {testimonials[currentIndex].author}
                     </h4> */}
-                        <p className="text-lg text-black w-[60%] sm:text-2xl font-gilroy">
+                        <p className="text-base text-black w-[60%] sm:text-2xl font-gilroy">
                             {testimonials[currentIndex].description}
                         </p>
                     </motion.div>
