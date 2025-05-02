@@ -287,7 +287,7 @@ export default function CorporateCollection() {
         //         </div>
         //     </div>
         // </div>
-        <div className="w-screen flex flex-col gap-8">
+        <div className="w-screen flex flex-col gap-8 mb-15">
             <ProductCarousel title="Corporate Collection" items={corporate} />
             <ProductCarousel title="Industrial Collection" items={industrial} />
             <ProductCarousel title="Hotel Collection" items={hotel} />

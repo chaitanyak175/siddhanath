@@ -56,14 +56,14 @@ const ClothingDesignSteps = () => {
                     subtitle="From formal to casual, our shirts are tailored to fit every occasion with premium quality fabrics."
                     hashtag="#2"
                     products={shirts}
-                    className="bg-[#199BFC]"
+                    className="bg-white"
                 />
                 <ClothingCard
                     title="Pants"
                     subtitle="Designed for both comfort and style. Whether it's chinos, jeans, or joggers, find your perfect fit."
                     hashtag="#3"
                     products={pants}
-                    className="bg-[#003CD3]"
+                    className="bg-white"
                 />
             </div>
         </div>
