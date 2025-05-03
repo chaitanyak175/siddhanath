@@ -43,7 +43,7 @@ export default function Home() {
                 <div id="home">
                     <Hero />
                 </div>
-                <div id="Products">
+                <div id="Products" className="sm:mb-10 mb-2">
                     <ClothingDesignSteps />
                 </div>
                 <div>

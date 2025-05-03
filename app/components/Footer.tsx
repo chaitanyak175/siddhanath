@@ -139,7 +139,7 @@ const Footer = () => {
             </div>
 
             <div className="flex flex-row justify-between items-center p-2 sm:px-4 text-[#2C2C2C] ">
-                <p className="text-xs text-[#4f4c4c] ">2024-Copyright</p>
+                <p className="text-xs text-[#4f4c4c] ">2025-Copyright</p>
                 <div className="flex flex-row justify-around sm:justify-between w-2/3 sm:w-4/7  ">
                     <p className="text-xs text-[#4f4c4c]">Privacy</p>
                     <p className="text-xs text-[#4f4c4c]">Eng</p>
