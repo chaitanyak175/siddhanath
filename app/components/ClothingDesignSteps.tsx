@@ -10,6 +10,13 @@ const ClothingDesignSteps = () => {
         "/images/shirts/shirt3.png",
         "/images/shirts/shirt4.png",
         "/images/shirts/shirt6.png",
+        "/images/shirts/shirt7.avif",
+        "/images/shirts/shirt8.avif",
+        "/images/shirts/shirt9.avif",
+        "/images/shirts/shirt10.avif",
+        "/images/shirts/shirt11.avif",
+        "/images/shirts/shirt12.avif",
+        "/images/shirts/shirt13.avif",
     ];
 
     const tshirts = [
@@ -20,12 +27,26 @@ const ClothingDesignSteps = () => {
         "/images/tshirts/tshirt6.jpg",
         "/images/tshirts/tshirt7.avif",
         "/images/tshirts/tshirt8.webp",
+        "/images/tshirts/tshirt11.avif",
+        "/images/tshirts/tshirt9.avif",
+        "/images/tshirts/tshirt10.avif",
     ];
 
     const pants = [
         "/images/pants/pant1.png",
         "/images/pants/pant2.png",
         "/images/pants/pant3.png",
+        "/images/pants/pant4.avif",
+        "/images/pants/pant5.avif",
+        "/images/pants/pant6.avif",
+        "/images/pants/pant7.avif",
+        "/images/pants/pant8.avif",
+        "/images/pants/pant9.avif",
+        "/images/pants/pant10.avif",
+        "/images/pants/pant11.avif",
+        "/images/pants/pant12.avif",
+        "/images/pants/pant13.avif",
+        "/images/pants/pant14.avif",
     ];
 
     return (
