@@ -35,7 +35,7 @@ const hospital = [
     },
     {
         title: "Hospital Bedsheets",
-        image: "/images/categories/hospital/hospital-bedsheets.jpeg",
+        image: "/images/categories/hospital/hospital-bedsheets.jpg",
     },
     {
         title: "Hospital Curtains",
