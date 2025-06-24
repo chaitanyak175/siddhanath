@@ -123,7 +123,7 @@ const Footer = () => {
                         </div>
                         <div className="flex flex-col gap-2 ">
                             <p className="text-[#f3ececd3] text-sm ">
-                                2Siddhanath Trendz Pvt. Ltd. Office No. 411 & 412,
+                                Siddhanath Trendz Pvt. Ltd. Office No. 411 & 412,
                             </p>
                             <p className="text-[#f3ececd3] text-sm">
                                 Vision Flora Phase II, Wing C-1, Survey Number 85, Pimple Saudagar, Pune: - 411027
