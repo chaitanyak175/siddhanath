@@ -123,13 +123,10 @@ const Footer = () => {
                         </div>
                         <div className="flex flex-col gap-2 ">
                             <p className="text-[#f3ececd3] text-sm ">
-                                2nd Floor, Phoenix Building, at, Senapati Bapat
-                                Rd, above Dominos Pizza,
+                                2Siddhanath Trendz Pvt. Ltd. Office No. 411 & 412,
                             </p>
                             <p className="text-[#f3ececd3] text-sm">
-                                Shivaji Co operative Housing Society,
-                                Bhageerath, Gokhalenagar, Pune, Maharashtra
-                                411016
+                                Vision Flora Phase II, Wing C-1, Survey Number 85, Pimple Saudagar, Pune: - 411027
                             </p>
                             <p className="text-2xl text-[#868282]">10am-6pm</p>
                             <p className="text-[#868282] text-xs">/Everyday</p>
