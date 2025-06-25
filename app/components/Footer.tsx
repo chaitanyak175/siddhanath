@@ -123,10 +123,12 @@ const Footer = () => {
                         </div>
                         <div className="flex flex-col gap-2 ">
                             <p className="text-[#f3ececd3] text-sm ">
-                                Siddhanath Trendz Pvt. Ltd. Office No. 411 & 412,
+                                Siddhanath Trendz Pvt. Ltd. Office No. 411 &
+                                412,
                             </p>
                             <p className="text-[#f3ececd3] text-sm">
-                                Vision Flora Phase II, Wing C-1, Survey Number 85, Pimple Saudagar, Pune: - 411027
+                                Vision Flora Phase II, Wing C-1, Survey Number
+                                85, Pimple Saudagar, Pune: - 411027
                             </p>
                             <p className="text-2xl text-[#868282]">10am-6pm</p>
                             <p className="text-[#868282] text-xs">/Everyday</p>
@@ -138,7 +140,12 @@ const Footer = () => {
             <div className="flex flex-row justify-between items-center p-2 sm:px-4 text-[#2C2C2C] ">
                 <p className="text-xs text-[#4f4c4c] ">2025-Copyright</p>
                 <div className="flex flex-row justify-around sm:justify-between w-2/3 sm:w-4/7  ">
-                    <p className="text-xs text-[#4f4c4c]">Privacy</p>
+                    <a
+                        href="/privacy"
+                        className="text-xs text-[#4f4c4c] hover:underline"
+                    >
+                        Privacy
+                    </a>
                     <p className="text-xs text-[#4f4c4c]">Eng</p>
                 </div>
             </div>
